@@ -1,8 +1,8 @@
-themesflat.co/html/finwice<?php
+﻿themesflat.co/html/finwice<?php
 
-// define("WEBMASTER_EMAIL", 'themesflatcdev3@gmail.com');
+// define("WEBMASTER_EMAIL", 'sales@itdorservices.com');
 //$address = "example@themeforest.net";
-$address = "themesflatcdev3@gmail.com";
+$address = "sales@itdorservices.com";
 if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
 $error = false;
