@@ -189,8 +189,96 @@
         }
     };
 
+    var showContactAlert = function ($form, message, isSuccess) {
+        $form.find(".flat-alert").remove();
+        $form.prepend(
+            $("<div />", {
+                class:
+                    "flat-alert mb-20 " +
+                    (isSuccess ? "msg-success" : "msg-error"),
+                text: message,
+            }).append(
+                $('<a class="close mt-0" href="#"><i class="fa fa-close"></i></a>')
+            )
+        );
+
+        if (isSuccess) {
+            $form.find(":input").not("[type='submit'], [type='button']").val("");
+            $form.find("textarea").val("");
+        }
+    };
+
+    var getContactSubject = function ($form) {
+        var subject = $.trim($form.find(".nice-select .current").text());
+        if (!subject || subject === "How can we help you?") {
+            return "";
+        }
+        return subject;
+    };
+
     var ajaxContactForm = function () {
-        $("#contactform,#commentform").each(function () {
+        $("#contactform").each(function () {
+            var $form = $(this);
+            var apiUrl = $form.data("api") || $form.attr("action") || "/api/contact";
+
+            $form.validate({
+                submitHandler: function (form) {
+                    var $f = $(form);
+                    var $submit = $f.find("[type='submit']");
+                    var loading = $("<div />", { class: "loading" });
+                    var payload = {
+                        name: $.trim($f.find('[name="name"]').val()),
+                        email: $.trim($f.find('[name="mail"]').val()),
+                        phone: $.trim($f.find('[name="phone"]').val()),
+                        subject: getContactSubject($f),
+                        message: $.trim($f.find('[name="message"]').val()),
+                    };
+
+                    $f.find(".send-wrap").append(loading);
+                    $submit.prop("disabled", true);
+
+                    fetch(apiUrl, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(payload),
+                    })
+                        .then(function (response) {
+                            return response
+                                .json()
+                                .catch(function () {
+                                    return {};
+                                })
+                                .then(function (data) {
+                                    if (!response.ok) {
+                                        throw new Error(
+                                            data.error || "Failed to send message"
+                                        );
+                                    }
+
+                                    showContactAlert(
+                                        $f,
+                                        "Message sent successfully. We'll respond within 24 hours.",
+                                        true
+                                    );
+                                });
+                        })
+                        .catch(function (error) {
+                            showContactAlert(
+                                $f,
+                                error.message ||
+                                    "An error occurred. Please try again.",
+                                false
+                            );
+                        })
+                        .finally(function () {
+                            $f.find(".loading").remove();
+                            $submit.prop("disabled", false);
+                        });
+                },
+            });
+        });
+
+        $("#commentform").each(function () {
             $(this).validate({
                 submitHandler: function (form) {
                     var $form = $(form),
@@ -207,27 +295,17 @@
                         success: function (msg) {
                             var result, cls;
                             if (msg === "Success") {
-                                result = "Message Sent Successfully To Email Administrator";
+                                result =
+                                    "Message Sent Successfully To Email Administrator";
                                 cls = "msg-success";
                             } else {
                                 result = "Error sending email.";
                                 cls = "msg-error";
                             }
 
-                            $form.prepend(
-                                $("<div />", {
-                                    class: "flat-alert mb-20 " + cls,
-                                    text: result,
-                                }).append(
-                                    $(
-                                        '<a class="close mt-0" href="#"><i class="fa fa-close"></i></a>'
-                                    )
-                                )
-                            );
-
-                            $form.find(":input").not(".submit").val("");
+                            showContactAlert($form, result, msg === "Success");
                         },
-                        complete: function (xhr, status, error_thrown) {
+                        complete: function () {
                             $form.find(".loading").remove();
                         },
                     });

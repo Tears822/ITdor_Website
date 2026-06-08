@@ -300,7 +300,7 @@
                         </div>
 
                         <div class="right">
-                            <form id="contactform" class="form-contact-us style-bg-dark-2 px-md-15" method="post" action="./contact/contact-process.php">
+                            <form id="contactform" class="form-contact-us style-bg-dark-2 px-md-15" method="post" action="/api/contact" data-api="/api/contact">
                                 <div class="cols mb-37 g-30">
                                     <fieldset class="item">
                                         <label for="name" class="sub-title body-2 fw-5">Full Name</label>
@@ -323,7 +323,7 @@
                                         <label for="phone" class="sub-title body-2 fw-5">Phone Number</label>
                                         <fieldset class="position-relative">
                                             <i class="icon-phone"></i>
-                                            <input type="number" name="phone" id="phone" placeholder="+1 (617) 712-9076" value="" required>
+                                            <input type="tel" name="phone" id="phone" placeholder="+1 (617) 712-9076" value="">
                                         </fieldset>
                                     </fieldset>
 
@@ -362,10 +362,12 @@
                                     <textarea name="message" id="message" placeholder="Write message" required></textarea>
                                 </fieldset>
 
-                                <button type="submit" class="tf-btn">
-                                    <span>Send Us Message</span>
-                                    <i class="icon-arrow-right"></i>
-                                </button>
+                                <div class="send-wrap">
+                                    <button type="submit" class="tf-btn">
+                                        <span>Send Us Message</span>
+                                        <i class="icon-arrow-right"></i>
+                                    </button>
+                                </div>
 
                             </form>
                         </div>
