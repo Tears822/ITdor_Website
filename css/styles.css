@@ -1281,11 +1281,27 @@ a:hover, a:focus {
   border-bottom: 1px solid var(--stroke-2);
 }
 .header .header-content {
-  padding-left: 15px;
-  padding-right: 0;
+  padding: 10px 0 10px 15px;
 }
 .header .logo-header {
-  padding-right: 15px;
+  padding-right: 20px;
+  width: max-content;
+  line-height: 0;
+  flex-shrink: 0;
+}
+.header .logo-header a {
+  display: block;
+  line-height: 0;
+}
+.header .logo-header img {
+  display: block;
+  height: 48px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+}
+.header .header-left {
+  min-height: 0;
 }
 .header .main-menu {
   border-left: 1px solid var(--stroke-2);
@@ -1368,7 +1384,15 @@ a:hover, a:focus {
   color: var(--white);
 }
 .mobile-nav-wrap .logo-mobile {
-  max-width: 120px;
+  max-width: 160px;
+  line-height: 0;
+}
+.mobile-nav-wrap .logo-mobile img {
+  display: block;
+  height: 40px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 .mobile-nav-wrap .socials-mobile .date {
   display: -webkit-box;
@@ -6028,9 +6052,11 @@ a.mapboxgl-ctrl-logo {
   .header .header-content {
     padding-left: 70px;
     padding-right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .header .logo-header {
-    padding-right: 91px;
+    padding-right: 24px;
   }
   .header .main-menu {
     padding-left: 70px;
@@ -6151,12 +6177,15 @@ a.mapboxgl-ctrl-logo {
     gap: 13px;
   }
   .header .header-content {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 15px;
+    padding: 10px 15px;
   }
   .header .logo-header {
-    max-width: 120px;
+    max-width: none;
+    padding-right: 12px;
+  }
+  .header .logo-header img {
+    height: 40px;
+    max-width: 160px;
   }
   .header .main-menu {
     display: none;
