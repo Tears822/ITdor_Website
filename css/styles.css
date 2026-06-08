@@ -931,6 +931,13 @@ a:hover, a:focus {
   overflow: hidden;
 }
 
+.line-clamp-4 {
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  display: -webkit-box !important;
+  overflow: hidden;
+}
+
 .font-family-2 {
   font-family: "DM Sans", sans-serif;
 }
@@ -2537,6 +2544,25 @@ fieldset {
   padding: 9px 18px !important;
   border-radius: 12px !important;
   border: 1px solid var(--stroke-2) !important;
+  position: relative;
+  z-index: 1;
+}
+.form-contact-us.sidebar-form .nice-select.open {
+  z-index: 100;
+}
+.form-contact-us.sidebar-form .nice-select .list {
+  max-height: none;
+  height: auto;
+  overflow: visible;
+  border-radius: 12px;
+  border: 1px solid var(--stroke-2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+.form-contact-us.sidebar-form .nice-select.open .list {
+  top: auto;
+  bottom: calc(100% + 6px);
+  margin-top: 0;
+  transform-origin: 50% 100%;
 }
 .form-contact-us.sidebar-form .nice-select span {
   color: var(--white);
@@ -2560,6 +2586,11 @@ fieldset {
 }
 .form-contact-us.sidebar-form .error {
   color: var(--white);
+}
+.form-contact-us.sidebar-form .tf-btn {
+  margin-top: 4px;
+  position: relative;
+  z-index: 1;
 }
 .form-contact-us.style-bg-dark-2 {
   background-color: var(--dark-2);
@@ -2969,6 +3000,7 @@ fieldset {
 
 .sidebar-contact {
   padding: 50px 40px 48px !important;
+  overflow: visible;
 }
 .sidebar-contact .title-content {
   letter-spacing: 0.3px;
@@ -4382,6 +4414,17 @@ a.mapboxgl-ctrl-logo {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+.services-item .icon .service-svg-icon {
+  display: block;
+  width: 55px;
+  height: 55px;
+  color: var(--white);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
 .services-item h6 {
   margin-bottom: 9px;
   letter-spacing: -0.4px;
@@ -4411,6 +4454,9 @@ a.mapboxgl-ctrl-logo {
   transform: rotateY(180deg);
 }
 .services-item:hover .icon i {
+  color: var(--primary);
+}
+.services-item:hover .icon .service-svg-icon {
   color: var(--primary);
 }
 .services-item:hover .tf-btn-readmore {
@@ -4479,11 +4525,14 @@ a.mapboxgl-ctrl-logo {
 .team-item .image {
   margin: 10px 9.5px 0;
   display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
 }
 .team-item .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
 }
 .team-item .top-item {
   position: relative;
@@ -5557,21 +5606,10 @@ a.mapboxgl-ctrl-logo {
   left: -27.5%;
   right: auto;
 }
-.section-testimonial .list-image {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: start;
-  gap: 28px 30px;
-}
 .section-testimonial .img-section {
-  flex: 1 1 auto;
-  max-width: calc(50% - 15px);
   border-radius: 15%;
   width: 100%;
+  overflow: hidden;
 }
 .section-testimonial .img-section img {
   width: 100%;
@@ -5584,6 +5622,60 @@ a.mapboxgl-ctrl-logo {
 }
 .section-testimonial .img-section.img-elip img {
   border-radius: 999px;
+}
+.section-testimonial > .tf-container > .row {
+  align-items: stretch;
+}
+.section-testimonial .col-lg-4,
+.section-testimonial .col-lg-5 {
+  display: flex;
+  flex-direction: column;
+}
+.section-testimonial .list-image {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  flex: 1;
+  width: 100%;
+  min-height: 520px;
+  gap: 24px 28px;
+  align-items: stretch;
+  align-content: stretch;
+}
+.section-testimonial .list-image .img-section {
+  flex: unset;
+  max-width: none;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+.section-testimonial .list-image .img-section img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  object-fit: cover;
+}
+@media (max-width: 991px) {
+  .section-testimonial .list-image {
+    min-height: 400px;
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-testimonial .list-image .img-section img {
+    min-height: 180px;
+  }
+}
+@media (max-width: 575px) {
+  .section-testimonial .list-image {
+    min-height: 320px;
+    gap: 16px;
+  }
+  .section-testimonial .list-image .img-section img {
+    min-height: 140px;
+  }
 }
 .section-testimonial.p-services .section-testimonials-inner {
   padding: 120px 40px;
@@ -5657,6 +5749,31 @@ a.mapboxgl-ctrl-logo {
 .section-blog {
   position: relative;
   overflow-x: clip;
+}
+#blog-home-teaser {
+  align-items: stretch;
+}
+#blog-home-teaser .blog-teaser-col {
+  display: flex;
+}
+#blog-home-teaser .blog-teaser-card {
+  flex: 1;
+  width: 100%;
+  align-items: stretch;
+}
+#blog-home-teaser .blog-teaser-card .post-content {
+  flex: 1;
+}
+#blog-home-teaser .blog-teaser-card .image {
+  align-self: stretch;
+  display: flex;
+  flex-shrink: 0;
+}
+#blog-home-teaser .blog-teaser-card .image img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
 }
 .section-blog .mask {
   position: absolute;
