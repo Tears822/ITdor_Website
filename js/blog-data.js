@@ -5,7 +5,7 @@ window.ITDOR_BLOG = [
     excerpt:
       "Software doesn't stop at deployment. Learn how dedicated application support keeps your product running smoothly and your users happy.",
     date: "2026-02-15",
-    author: "IT Dor Services",
+    author: "ITDorservices",
     image: "image/blog/blog-grid-1.jpg",
     listImage: "image/blog/tf-post-big-1.jpg",
     tags: ["Application Support", "Software"],
@@ -17,7 +17,7 @@ window.ITDOR_BLOG = [
     excerpt:
       "How we choose technologies that scale, stay maintainable, and keep your project on track for the long term.",
     date: "2026-02-10",
-    author: "IT Dor Services",
+    author: "ITDorservices",
     image: "image/blog/blog-grid-2.jpg",
     listImage: "image/blog/tf-post-big-2.jpg",
     tags: ["Software Development", "Tech Stack"],
@@ -29,7 +29,7 @@ window.ITDOR_BLOG = [
     excerpt:
       "Why combining software development with application support in a single team leads to better outcomes and fewer headaches.",
     date: "2026-02-05",
-    author: "IT Dor Services",
+    author: "ITDorservices",
     image: "image/blog/blog-grid-3.jpg",
     listImage: "image/blog/tf-post-big-3.jpg",
     tags: ["Application Support", "Development"],
@@ -41,7 +41,7 @@ window.ITDOR_BLOG = [
     excerpt:
       "Off-the-shelf tools are great—until they're not. Here's when it makes sense to invest in custom development.",
     date: "2026-01-28",
-    author: "IT Dor Services",
+    author: "ITDorservices",
     image: "image/blog/blog-grid-4.jpg",
     listImage: "image/blog/tf-post-big-1.jpg",
     tags: ["Custom Software", "Development"],
@@ -53,7 +53,7 @@ window.ITDOR_BLOG = [
     excerpt:
       "How we deliver software and support remotely while keeping communication clear and projects on track.",
     date: "2026-01-20",
-    author: "IT Dor Services",
+    author: "ITDorservices",
     image: "image/services/remote_delivery.jpg",
     listImage: "image/services/remote_delivery.jpg",
     tags: ["Remote Work", "IT Services"],
