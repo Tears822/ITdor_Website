@@ -103,7 +103,7 @@
         service.intro +
         "</p><p class=\"lh-30\">" +
         service.description +
-        " Contact us for a detailed quote. Software development projects start from $3K.</p>";
+        " Contact us for a detailed quote.</p>";
     }
 
     var featuresTitle = root.querySelector("[data-sd-features-title]");
