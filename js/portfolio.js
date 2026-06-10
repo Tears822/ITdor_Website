@@ -5,6 +5,64 @@
     return new URLSearchParams(window.location.search).get(name);
   }
 
+  function portfolioDetailsUrl(slug) {
+    return "porfolio-details.html?p=" + slug;
+  }
+
+  function initPortfolioGrid() {
+    var grid = document.getElementById("portfolio-grid");
+    if (!grid || !window.ITDOR_PORTFOLIO) return;
+
+    grid.innerHTML = window.ITDOR_PORTFOLIO
+      .map(function (project) {
+        var url = portfolioDetailsUrl(project.slug);
+        return (
+          '<div class="col-sm-6 portfolio-col" data-category="' +
+          project.category +
+          '">' +
+          '<div class="project-gird-item project-item portfolio-case-card">' +
+          '<a href="' +
+          url +
+          '" class="image"><img src="' +
+          project.image +
+          '" data-src="' +
+          project.image +
+          '" alt="' +
+          project.title +
+          '" class="lazyload"></a>' +
+          '<div class="item-content">' +
+          '<div class="sub-title body-2 fw-7">' +
+          project.category +
+          "</div>" +
+          '<h3 class="title-project"><a href="' +
+          url +
+          '">' +
+          project.title +
+          "</a></h3>" +
+          '<p class="portfolio-case-desc lh-30 body-2">' +
+          project.shortDesc +
+          "</p>" +
+          '<div class="portfolio-case-meta body-2">' +
+          "<span><strong>Client:</strong> " +
+          project.client +
+          "</span>" +
+          "<span><strong>Duration:</strong> " +
+          project.duration +
+          "</span>" +
+          "</div>" +
+          '<div class="portfolio-case-cta">' +
+          '<a href="' +
+          url +
+          '" class="tf-btn-readmore portfolio-case-link"><span class="plus">+</span><span class="text">View Case Study</span></a>' +
+          "</div>" +
+          "</div>" +
+          "</div>" +
+          "</div>"
+        );
+      })
+      .join("");
+  }
+
   function initGridFilter() {
     var grid = document.getElementById("portfolio-grid");
     var tabs = document.querySelectorAll("[data-portfolio-filter]");
@@ -38,17 +96,42 @@
     var prev = list[(idx - 1 + list.length) % list.length];
     var next = list[(idx + 1) % list.length];
 
-    document.title = project.title + " | IT Dor Services";
+    document.title = project.title + " Case Study | IT Dor Services";
 
     root.querySelector("[data-pd-hero]").src = project.image;
     root.querySelector("[data-pd-hero]").alt = project.title;
     root.querySelector("[data-pd-title]").textContent = project.title;
-    root.querySelector("[data-pd-lead]").textContent = project.description;
-    root.querySelector("[data-pd-summary]").textContent = project.description;
+    root.querySelector("[data-pd-lead]").textContent = project.shortDesc;
+
+    var summary = root.querySelector("[data-pd-summary]");
+    if (summary) summary.textContent = project.description;
+
     root.querySelector("[data-pd-category]").textContent = project.category;
     root.querySelector("[data-pd-client]").textContent = project.client;
     root.querySelector("[data-pd-location]").textContent = project.location;
     root.querySelector("[data-pd-published]").textContent = project.published;
+
+    var duration = root.querySelector("[data-pd-duration]");
+    if (duration) duration.textContent = project.duration || "—";
+
+    var challenge = root.querySelector("[data-pd-challenge]");
+    if (challenge) challenge.textContent = project.challenge || project.description;
+
+    var solution = root.querySelector("[data-pd-solution]");
+    if (solution) solution.textContent = project.solution || project.description;
+
+    var results = root.querySelector("[data-pd-results]");
+    if (results && project.results) {
+      results.innerHTML = project.results
+        .map(function (item) {
+          return (
+            '<div class="benefit-item"><i class="icon-check"></i><span class="lh-30 body-2">' +
+            item +
+            "</span></div>"
+          );
+        })
+        .join("");
+    }
 
     var benefits = root.querySelector("[data-pd-benefits]");
     if (benefits) {
@@ -91,8 +174,8 @@
         .join("");
     }
 
-    var prevUrl = "porfolio-details.html?p=" + prev.slug;
-    var nextUrl = "porfolio-details.html?p=" + next.slug;
+    var prevUrl = portfolioDetailsUrl(prev.slug);
+    var nextUrl = portfolioDetailsUrl(next.slug);
     root.querySelectorAll(".pd-prev-link").forEach(function (el) {
       el.href = prevUrl;
     });
@@ -116,6 +199,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    initPortfolioGrid();
     initGridFilter();
     initDetailsPage();
   });

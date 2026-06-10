@@ -37,8 +37,50 @@
       .join("");
   }
 
+  function initServiceTabs() {
+    var tabLinks = document.querySelectorAll("[data-services-tab]");
+    var tabPanes = document.querySelectorAll("[data-services-pane]");
+    var introPanes = document.querySelectorAll("[data-services-intro-pane]");
+    if (!tabLinks.length) return;
+
+    function activateTab(tab) {
+      tabLinks.forEach(function (link) {
+        var isActive = link.getAttribute("data-services-tab") === tab;
+        link.classList.toggle("active", isActive);
+      });
+      tabPanes.forEach(function (pane) {
+        pane.classList.toggle("active", pane.getAttribute("data-services-pane") === tab);
+      });
+      introPanes.forEach(function (pane) {
+        pane.classList.toggle("active", pane.getAttribute("data-services-intro-pane") === tab);
+      });
+    }
+
+    tabLinks.forEach(function (link) {
+      link.addEventListener("click", function (e) {
+        e.preventDefault();
+        activateTab(link.getAttribute("data-services-tab"));
+      });
+    });
+
+    var params = new URLSearchParams(window.location.search);
+    var tabParam = params.get("tab");
+    var hash = (window.location.hash || "").replace("#", "");
+    if (
+      tabParam === "software" ||
+      hash === "software-development" ||
+      hash === "software-services" ||
+      hash === "software"
+    ) {
+      activateTab("software");
+    } else if (tabParam === "it" || hash === "it-services" || hash === "it-services-intro" || hash === "onsite") {
+      activateTab("onsite");
+    }
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     renderGroup(document.getElementById("services-onsite-list"), "onsite");
     renderGroup(document.getElementById("services-dev-list"), "software");
+    initServiceTabs();
   });
 })();

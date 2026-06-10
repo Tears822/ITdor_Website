@@ -1857,6 +1857,44 @@ a:hover, a:focus {
   transition-timing-function: ease-in;
   transition-duration: 0.2s;
 }
+.services-tabs-nav.wg-tab.style-2 ul {
+  justify-content: center;
+  margin: 0 auto;
+}
+.services-page-tabs.wg-tab.style-2 ul {
+  flex-wrap: wrap;
+  gap: 8px 24px;
+}
+.services-intro-tab-content {
+  min-height: 0;
+  position: relative;
+}
+.services-intro-tab-content .tab-pane:not(.active) {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  transform: translateY(20px);
+}
+.services-intro-tab-content .tab-pane.active {
+  pointer-events: auto;
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  z-index: 2;
+  transform: none;
+}
+.section-about.p-services .services-intro-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.services-tab-content {
+  min-height: 320px;
+}
 .tab-content .tab-pane.active {
   pointer-events: auto;
   opacity: 1;
@@ -2644,6 +2682,19 @@ fieldset {
   padding: 15px 25px 15px 25px !important;
   border-radius: 12px !important;
   border: 1px solid var(--stroke-2) !important;
+  position: relative;
+  z-index: 1;
+}
+.form-contact-us.style-bg-dark-2 .nice-select.open {
+  z-index: 100;
+}
+.form-contact-us.style-bg-dark-2 .nice-select .list {
+  max-height: none;
+  height: auto;
+  overflow: visible;
+  border-radius: 12px;
+  border: 1px solid var(--stroke-2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 .form-contact-us.style-bg-dark-2 .nice-select span {
   color: var(--white);
@@ -4521,10 +4572,33 @@ a.mapboxgl-ctrl-logo {
   margin-bottom: 40px;
   background-color: var(--main-dark);
 }
+.services-item.hover-image .image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+.sw-services .swiper-slide {
+  height: auto;
+  display: flex;
+}
+.sw-services .swiper-slide .services-item.hover-image {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sw-services .services-item.hover-image .desc {
+  min-height: 90px;
+}
+.sw-services .services-item.hover-image .bottom-item {
+  margin-top: auto;
+}
 .services-item .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 .services-item.no-img {
   border-left: 1px solid var(--stroke-2);
@@ -4788,11 +4862,14 @@ a.mapboxgl-ctrl-logo {
 }
 .project-item.project-gird-item {
   flex-direction: column;
+  align-items: stretch;
   border: 0;
   background-color: transparent;
+  height: 100%;
 }
 .project-item.project-gird-item .image {
-  margin: 0 0 38px !important;
+  flex: 0 0 auto;
+  margin: 0 0 24px !important;
   position: relative;
   display: block;
   width: 100%;
@@ -4803,15 +4880,53 @@ a.mapboxgl-ctrl-logo {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   display: block;
 }
 .section-project .row > [class*="col-"],
 #portfolio-grid > [class*="col-"] {
   display: flex;
 }
+.section-project .row.rg-30,
+#portfolio-grid.row {
+  align-items: flex-start;
+}
 .section-project .row .project-gird-item,
 #portfolio-grid .project-gird-item {
-  height: 100%;
+  height: auto;
+  width: 100%;
+}
+.section-project .project-cta {
+  margin-top: 24px;
+}
+.portfolio-case-card .portfolio-case-desc {
+  margin-top: 12px;
+  color: var(--surface);
+  opacity: 0.88;
+}
+.portfolio-case-card .portfolio-case-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 24px;
+  margin-top: 14px;
+  color: var(--surface);
+  opacity: 0.75;
+}
+.portfolio-case-card .portfolio-case-meta strong {
+  color: var(--white);
+  font-weight: 600;
+}
+.portfolio-case-card .portfolio-case-cta {
+  margin-top: 18px;
+}
+.portfolio-case-card .portfolio-case-link .text {
+  font-weight: 500;
+}
+.portfolio-case-study .list-benefit {
+  margin-bottom: 0;
+}
+.portfolio-case-study .list-benefit .benefit-item {
+  margin-bottom: 12px;
 }
 .project-item.project-gird-item .image::after {
   content: "";
@@ -4828,14 +4943,29 @@ a.mapboxgl-ctrl-logo {
   background: linear-gradient(180deg, rgba(67, 186, 255, 0) 42.89%, #43BAFF 100%);
 }
 .project-item.project-gird-item .item-content {
+  flex: 0 0 auto;
   padding: 0 !important;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  width: 100%;
 }
 .project-item.project-gird-item .item-content .sub-title {
-  margin-bottom: 32px;
+  margin-bottom: 0;
+  min-height: auto;
+  line-height: 1.4;
 }
 .project-item.project-gird-item .item-content .title-project {
-  margin-bottom: 5px;
+  margin: 0 !important;
+  min-height: auto;
+  line-height: 1.25;
+  display: block;
+  width: 100%;
+}
+.project-item.project-gird-item .item-content .title-project a {
+  display: block;
+  width: 100%;
 }
 .project-item.project-gird-item:hover .image::after {
   height: 100%;
@@ -5539,6 +5669,23 @@ a.mapboxgl-ctrl-logo {
 .section-about {
   position: relative;
 }
+.section-about .about-story-heading .sub-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.15;
+}
+.section-about .about-story-heading .title {
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+.section-about .about-story-heading .title span {
+  letter-spacing: 0.01em;
+}
+.section-about .about-story-heading .desc {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  line-height: 1.65;
+  max-width: 960px;
+}
 .section-about .about-top {
   margin-bottom: 70px;
 }
@@ -5585,6 +5732,97 @@ a.mapboxgl-ctrl-logo {
 }
 .section-about.p-services .list-benefit .benefit-item:last-child {
   margin-bottom: 0;
+}
+
+.section-about .about-story-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+.section-about .about-story-inner .left-section {
+  flex: 1;
+  min-width: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.section-about .about-story-inner .right-section {
+  flex: 0 0 38%;
+  max-width: 480px;
+  position: relative;
+}
+.section-about .about-story-inner .image-section {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--stroke-2);
+}
+.section-about .about-story-inner .image-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section-about .about-story-thumb {
+  position: absolute;
+  bottom: 28px;
+  left: -36px;
+  width: 44%;
+  max-width: 210px;
+  aspect-ratio: 1;
+  border: 3px solid var(--dark-2);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+.section-about .about-story-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section-about .about-milestone-row {
+  margin-bottom: 50px;
+}
+.section-about .about-milestone-card {
+  background-color: var(--dark-2);
+  border: 1px solid var(--stroke-2);
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+}
+.section-about .about-milestone-card__image {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+}
+.section-about .about-milestone-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.section-about .about-milestone-card__body {
+  padding: 24px 28px 28px;
+}
+.section-about .about-milestone-card__year {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 10px;
+  letter-spacing: 0.04em;
+}
+.section-about .about-industry-strip {
+  padding: 28px 32px;
+  border: 1px solid var(--stroke-2);
+  border-radius: 12px;
+  background-color: var(--dark-2);
+}
+.section-about .about-story-cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
 }
 
 .section-counting {
@@ -6108,6 +6346,10 @@ a.mapboxgl-ctrl-logo {
     padding-right: 140px;
     max-width: 770px;
   }
+  .section-about .about-story-inner .left-section {
+    padding-right: 50px;
+    max-width: 58%;
+  }
   .section-company .image-section {
     max-width: 765px;
   }
@@ -6361,6 +6603,29 @@ a.mapboxgl-ctrl-logo {
     padding-top: 0;
     padding-right: 0;
     padding-bottom: 70px;
+  }
+  .section-about .about-story-inner {
+    flex-direction: column;
+    gap: 0;
+  }
+  .section-about .about-story-inner .left-section {
+    padding-bottom: 50px;
+  }
+  .section-about .about-story-inner .right-section {
+    flex: 1 1 auto;
+    max-width: 100%;
+    width: 100%;
+  }
+  .section-about .about-story-thumb {
+    left: 20px;
+    bottom: 20px;
+    width: 38%;
+    max-width: 180px;
+  }
+  .section-about .about-industry-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
   }
   .counter-item .fs-65 {
     font-size: 40px !important;
@@ -6726,6 +6991,14 @@ a.mapboxgl-ctrl-logo {
   .project-item.project-gird-item .image {
     width: 100% !important;
     margin: 0 0 24px !important;
+  }
+  .project-item.project-gird-item .item-content .sub-title {
+    margin-bottom: 0 !important;
+    min-height: auto;
+  }
+  .project-item.project-gird-item .item-content .title-project {
+    margin: 0 !important;
+    min-height: auto;
   }
   .project-item .sub-title {
     margin-bottom: 20px !important;

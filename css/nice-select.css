@@ -139,6 +139,11 @@
     overflow: auto;
 }
 
+.form-contact-us .nice-select .list {
+    max-height: none;
+    overflow: visible;
+}
+
 .nice-select .list.style {
     max-height: unset;
 }
