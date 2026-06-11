@@ -53,7 +53,7 @@
           '<div class="portfolio-case-cta">' +
           '<a href="' +
           url +
-          '" class="tf-btn-readmore portfolio-case-link"><span class="plus">+</span><span class="text">View Case Study</span></a>' +
+          '" class="tf-btn-readmore style-open portfolio-case-link"><span class="plus">+</span><span class="text">View Case Study</span></a>' +
           "</div>" +
           "</div>" +
           "</div>" +

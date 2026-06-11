@@ -89,7 +89,6 @@
                     <ul class="list-support flex align-items-center">
                         <li class="support-item"><a href="contact.html">Help</a></li>
                         <li class="support-item"><a href="contact.html">Support</a></li>
-                        <li class="support-item"><a href="faq.html">Faqs</a></li>
                     </ul>
 
                     <ul class="post-social">
@@ -147,13 +146,6 @@
                                 <a href="blog-standard.html" class="item-link body-2">
                                     <span>
                                         Blog
-                                    </span>
-                                </a>
-                            </li>
-                                                        <li class="menu-item ">
-                                <a href="faq.html" class="item-link body-2">
-                                    <span>
-                                        FAQ
                                     </span>
                                 </a>
                             </li>
@@ -1462,26 +1454,26 @@
 
                             </div>
 
-                            <div class="nice-select mb-20">
-                                <span class="current caption-1">Choose Services</span>
-                                <ul class="list">
-                                    <li class="option option-all selected focus">
-                                        Choose Services
-                                    </li>
-                                    <li class="option">
-                                        Machine Learning
-                                    </li>
-                                    <li class="option">
-                                        Artificial Intelligence
-                                    </li>
-                                    <li class="option">
-                                        Augmented Reality
-                                    </li>
-                                    <li class="option">
-                                        IT Support & Networking
-                                    </li>
-                                </ul>
-                            </div>
+                            <select name="subject" class="select_js wide mb-20" required>
+                                <option value="">Choose Services</option>
+                                <optgroup label="IT Services">
+                                    <option value="Network & Connectivity Support">Network & Connectivity Support</option>
+                                    <option value="Emergency Onsite Dispatch">Emergency Onsite Dispatch</option>
+                                    <option value="Cat5/Cat6 Cabling">Cat5/Cat6 Cabling</option>
+                                    <option value="Desktop & Server Support">Desktop & Server Support</option>
+                                    <option value="VOIP Phone Support">VOIP Phone Support</option>
+                                    <option value="Networking Issues">Networking Issues</option>
+                                </optgroup>
+                                <optgroup label="Software Services">
+                                    <option value="Custom Software Development">Custom Software Development</option>
+                                    <option value="Application Support">Application Support</option>
+                                    <option value="UI/UX Design">UI/UX Design</option>
+                                    <option value="Cloud & DevOps">Cloud & DevOps</option>
+                                    <option value="AI & Machine Learning">AI & Machine Learning</option>
+                                    <option value="Web Security">Web Security</option>
+                                </optgroup>
+                                <option value="General Inquiry">General Inquiry</option>
+                            </select>
 
                             <fieldset class="mb-20">
                                 <textarea name="message" id="message" placeholder="Message" required></textarea>
@@ -1852,7 +1844,6 @@
                         <li class="menu-item"><a href="services.html">Services</a></li>
 
                         <li class="menu-item"><a href="blog-standard.html">Blog</a></li>
-                                                <li class="menu-item "><a href="faq.html">FAQ</a></li>
 <li class="menu-item">
                             <a href="contact.html">Contact Us</a>
                         </li>
@@ -1961,6 +1952,7 @@
     <script src="js/blog-data.js"></script>
     <script src="js/blog.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/contact-form-select.js"></script>
     <script src="js/lazysize.min.js"></script>
     <script src="js/magnific-popup.min.js"></script>
     <script src="js/gsap.min.js"></script>

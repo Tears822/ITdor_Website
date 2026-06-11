@@ -209,8 +209,17 @@
     };
 
     var getContactSubject = function ($form) {
+        var $select = $form.find("select[name='subject']");
+        if ($select.length) {
+            return $.trim($select.val());
+        }
         var subject = $.trim($form.find(".nice-select .current").text());
-        if (!subject || subject === "How can we help you?") {
+        var placeholders = [
+            "How can we help you?",
+            "Choose Services",
+            "Subject",
+        ];
+        if (!subject || placeholders.indexOf(subject) !== -1) {
             return "";
         }
         return subject;

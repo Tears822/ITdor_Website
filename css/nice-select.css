@@ -141,7 +141,14 @@
 
 .form-contact-us .nice-select .list {
     max-height: none;
+    height: auto;
+    min-height: 0;
     overflow: visible;
+    margin-top: 0;
+    padding: 0;
+}
+.form-contact-us .nice-select.open .list {
+    transform: scale(1) translateY(0);
 }
 
 .nice-select .list.style {
