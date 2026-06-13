@@ -53,25 +53,46 @@
 
   function replaceLegacyNiceSelect(container, placeholder) {
     if (!container) return;
+    if (container.querySelector("select[name='subject']")) {
+      return;
+    }
     var legacy = container.querySelector(".nice-select:not(select)");
     if (!legacy) return;
     var select = buildSubjectSelect(placeholder);
     legacy.replaceWith(select);
   }
 
+  function cleanupSubjectFields(form) {
+    if (!form) return;
+    var selects = form.querySelectorAll("select[name='subject']");
+    for (var i = 1; i < selects.length; i++) {
+      selects[i].remove();
+    }
+    var keep = form.querySelector("select[name='subject']");
+    if (keep && window.jQuery && jQuery.fn.niceSelect) {
+      jQuery(keep).niceSelect("destroy");
+    }
+    form.querySelectorAll(".nice-select:not(select)").forEach(function (node) {
+      node.remove();
+    });
+  }
+
   function initNiceSelects() {
     if (window.jQuery && jQuery.fn.niceSelect) {
       jQuery("select.select_js").each(function () {
         var $el = jQuery(this);
-        if (!$el.next(".nice-select").length) {
-          $el.niceSelect();
+        if ($el.next(".nice-select").length) {
+          return;
         }
+        $el.niceSelect();
       });
     }
   }
 
   function boot() {
-    replaceLegacyNiceSelect(
+    document.querySelectorAll("form.form-contact-us, #contactform").forEach(function (form) {
+      cleanupSubjectFields(form);
+    });    replaceLegacyNiceSelect(
       document.querySelector("#contactform.style-bg-dark-2"),
       "How can we help you?"
     );
