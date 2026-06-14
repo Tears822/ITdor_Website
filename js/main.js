@@ -391,6 +391,24 @@
         }
     };
 
+    var whatsappFloatCta = function () {
+        if ($(".whatsapp-float-cta").length) {
+            return;
+        }
+
+        var $cta = $(
+            '<a href="https://wa.me/16177129076" class="whatsapp-float-cta" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">' +
+                '<span class="whatsapp-float-cta__pulse" aria-hidden="true"></span>' +
+                '<span class="whatsapp-float-cta__pulse whatsapp-float-cta__pulse--delay" aria-hidden="true"></span>' +
+                '<span class="whatsapp-float-cta__inner">' +
+                    '<span class="whatsapp-float-cta__icon" aria-hidden="true"></span>' +
+                "</span>" +
+            "</a>"
+        );
+
+        $("body").append($cta);
+    };
+
     var preloader = function () {
         $("#loading").fadeOut("slow", function () {
             $(this).remove();
@@ -409,6 +427,7 @@
         handleSidebarFilter();
         parallaxImage();
         goTop();
+        whatsappFloatCta();
         preloader();
     });
 })(jQuery);
