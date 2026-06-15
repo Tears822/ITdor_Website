@@ -1640,6 +1640,16 @@ a:hover, a:focus {
   display: none !important;
 }
 
+#tawk-bubble-container,
+.tawk-min-container,
+.tawk-max-container,
+.tawk-button,
+iframe[title*="chat widget" i] {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
 .footer-middle .left {
   max-width: 594px;
   width: 100%;
