@@ -1740,13 +1740,57 @@ iframe[title*="chat widget" i] {
 .locations-contact .locations-footer .address {
   letter-spacing: 0.3px;
 }
+.locations-contact .locations-footer .address.footer-location-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.locations-contact .locations-footer .address.footer-location-item i {
+  flex-shrink: 0;
+  margin-top: 6px;
+  color: var(--primary);
+  font-size: 16px;
+}
 .locations-contact .contact-footer .title {
   margin-bottom: 36px;
+}
+.footer-contact-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer-contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.footer-contact-item > i {
+  flex-shrink: 0;
+  margin-top: 5px;
+  color: var(--primary);
+  font-size: 16px;
+  line-height: 1;
+}
+.footer-contact-item a {
+  letter-spacing: 0.3px;
+  display: inline-block;
+  margin-bottom: 0;
+  line-height: 1.5;
+  font-size: inherit;
+}
+.footer-contact-item--phone a {
+  letter-spacing: 0.3px;
 }
 .locations-contact .contact-footer a {
   letter-spacing: 0.3px;
   display: inline-block;
   margin-bottom: 9px;
+}
+.locations-contact .contact-footer .footer-contact-list a {
+  margin-bottom: 0;
 }
 .locations-contact .contact-footer h4 a {
   letter-spacing: 0.75px;
