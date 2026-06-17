@@ -228,7 +228,12 @@
     var ajaxContactForm = function () {
         $("#contactform").each(function () {
             var $form = $(this);
-            var apiUrl = $form.data("api") || $form.attr("action") || "/api/contact";
+            var apiUrl =
+                $form.data("api") ||
+                ($form.attr("action") &&
+                $form.attr("action").indexOf("contact-process.php") === -1
+                    ? $form.attr("action")
+                    : "/api/contact");
 
             $form.validate({
                 submitHandler: function (form) {

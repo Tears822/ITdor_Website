@@ -97,9 +97,31 @@
         },
       ],
     },
+    cybersecurity: {
+      intro:
+        "From assessment through remediation — we help you identify risks and harden your applications and infrastructure.",
+      steps: [
+        {
+          num: "Step 01",
+          title: "Assess & Prioritize",
+          text:
+            "We review applications, APIs, and infrastructure to identify vulnerabilities and rank remediation priorities.",
+        },
+        {
+          num: "Step 02",
+          title: "Harden & Fix",
+          text:
+            "We implement security controls, patch gaps, and align with OWASP and access-management best practices.",
+        },
+        {
+          num: "Step 03",
+          title: "Verify & Monitor",
+          text:
+            "We validate fixes, document changes, and recommend ongoing monitoring to stay ahead of new threats.",
+        },
+      ],
+    },
   };
-
-  function renderHowWeWork(root, group) {
     var section = null;
     root.querySelectorAll(".details-content-2").forEach(function (el) {
       var heading = el.querySelector("h4.title");
@@ -214,10 +236,8 @@
       var popular = [
         "application-support",
         "software-development",
-        "saas",
-        "ai-ml",
-        "cloud-devops",
-        "ecommerce",
+        "ui-ux-design",
+        "web-security",
       ];
       sidebarList.innerHTML = popular
         .filter(function (s) {

@@ -1870,6 +1870,24 @@ iframe[title*="chat widget" i] {
   align-items: flex-start;
   gap: 16px;
 }
+.software-industries-panel h5 {
+  color: var(--main-dark);
+}
+.software-industries-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.software-industry-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--stroke-2);
+  background: rgba(255, 255, 255, 0.04);
+  font-size: 14px;
+  line-height: 1.2;
+}
 .services-tab-content {
   min-height: 320px;
 }
@@ -4773,6 +4791,11 @@ a.mapboxgl-ctrl-logo {
   margin-bottom: 10px;
   letter-spacing: -0.5px;
 }
+.team-item .item-content .team-role {
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--text-2);
+}
 .team-item:hover .social-item {
   bottom: -27px;
   opacity: 1;
@@ -5478,10 +5501,9 @@ a.mapboxgl-ctrl-logo {
 
 .whatsapp-float-cta {
   position: fixed;
-  top: 50%;
   right: 24px;
+  bottom: 24px;
   z-index: 99990;
-  transform: translateY(-50%);
   display: inline-flex;
   align-items: center;
   text-decoration: none;
@@ -5546,6 +5568,7 @@ a.mapboxgl-ctrl-logo {
 @media (max-width: 767px) {
   .whatsapp-float-cta {
     right: 16px;
+    bottom: 16px;
   }
   .whatsapp-float-cta__inner {
     width: 68px;
