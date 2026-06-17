@@ -4796,6 +4796,15 @@ a.mapboxgl-ctrl-logo {
   font-size: 14px;
   color: var(--text-2);
 }
+.section-team .about-team-caption {
+  margin-top: 72px;
+  padding-top: 8px;
+}
+@media (max-width: 767px) {
+  .section-team .about-team-caption {
+    margin-top: 56px;
+  }
+}
 .team-item:hover .social-item {
   bottom: -27px;
   opacity: 1;
@@ -6297,6 +6306,15 @@ a.mapboxgl-ctrl-logo {
 .section-blog {
   position: relative;
   overflow-x: clip;
+}
+.section-blog .blog-cta {
+  margin-top: 72px;
+  padding-top: 8px;
+}
+@media (max-width: 767px) {
+  .section-blog .blog-cta {
+    margin-top: 56px;
+  }
 }
 #blog-home-teaser {
   align-items: stretch;
