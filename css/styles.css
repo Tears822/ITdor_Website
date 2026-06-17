@@ -6431,6 +6431,18 @@ body.portfolio-mosaic-open {
   font-size: clamp(2.5rem, 5vw, 4rem);
   line-height: 1.15;
 }
+.section-about .about-story-prose,
+.section-about .about-story-prose p {
+  font-size: clamp(22px, 2.2vw, 28px);
+  line-height: 1.65;
+}
+@media (max-width: 767px) {
+  .section-about .about-story-prose,
+  .section-about .about-story-prose p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
 .section-about .about-story-heading .title {
   font-size: clamp(3.5rem, 8vw, 6rem);
   line-height: 1.1;
