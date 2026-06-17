@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
@@ -194,11 +194,6 @@
                     <h1 class="title split-text effect-right">
                         Software Portfolio
                     </h1>
-                    <div class="breadkcum">
-                        <a href="index.html" class="link-breadkcum body-2 fw-7 split-text effect-right">Home</a>
-                        <span class="dot"></span>
-                        <span class="page-breadkcum body-2 fw-7 split-text effect-right"> Software Portfolio</span>
-                    </div>
                 </div>
             </div>
         </div>
@@ -207,24 +202,14 @@
 
         <!-- Main-content -->
 
-        <div class="main-content tf-spacing-2">
-            <div class="tf-container">
-                <div class="flat-animate-tab mb-70">
-                    <div class="wg-tab style-2">
-                        <ul class="tab-product" role="tablist">
-                            <li class="nav-tab-item" role="presentation"><a href="#" data-portfolio-filter="all" class="active fw-5 body-2">Show All</a></li>
-                            <li class="nav-tab-item" role="presentation"><a href="#" data-portfolio-filter="Web Development" class="fw-5 body-2">Web Development</a></li>
-                            <li class="nav-tab-item" role="presentation"><a href="#" data-portfolio-filter="Mobile Development" class="fw-5 body-2">Mobile</a></li>
-                            <li class="nav-tab-item" role="presentation"><a href="#" data-portfolio-filter="UI/UX Design" class="fw-5 body-2">UI/UX Design</a></li>
-                            <li class="nav-tab-item" role="presentation"><a href="#" data-portfolio-filter="AI Solutions" class="fw-5 body-2">AI Solutions</a></li>
-                            <li class="nav-tab-item" role="presentation"><a href="#" data-portfolio-filter="Cloud Services" class="fw-5 body-2">Cloud</a></li>
-                            <li class="nav-tab-item" role="presentation"><a href="#" data-portfolio-filter="DevOps &amp; CI/CD" class="fw-5 body-2">DevOps</a></li>
-                        </ul>
-                    </div>
+        <div class="main-content tf-spacing-2 portfolio-grid-page">
+            <div class="portfolio-marquee-wrap">
+                <div class="portfolio-marquee-row portfolio-marquee-row--right" aria-label="Portfolio row scrolling right">
+                    <div class="portfolio-marquee-track" id="portfolio-row-1"></div>
                 </div>
-            </div>
-            <div class="tf-container">
-                <div class="row rg-70" id="portfolio-grid"></div>
+                <div class="portfolio-marquee-row portfolio-marquee-row--left" aria-label="Portfolio row scrolling left">
+                    <div class="portfolio-marquee-track" id="portfolio-row-2"></div>
+                </div>
             </div>
         </div>
 
@@ -676,7 +661,9 @@
     <script src="js/jquery-validate.js"></script>
 
     <script src="js/portfolio-data.js"></script>
-    <script src="js/portfolio.js"></script>
+    <script src="js/portfolio.js"></script>    <script src="js/site-config.js"></script>
+    <script src="js/book-meeting.js"></script>
+
     <script type="text/javascript" src="js/main.js"></script>
     <script src="js/sibforms.js" defer></script>
     <script>

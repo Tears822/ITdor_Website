@@ -9,6 +9,54 @@
     return "porfolio-details.html?p=" + slug;
   }
 
+  function portfolioCardHtml(project) {
+    var url = portfolioDetailsUrl(project.slug);
+    return (
+      '<a href="' +
+      url +
+      '" class="portfolio-marquee-card">' +
+      '<div class="portfolio-marquee-card-image">' +
+      '<img src="' +
+      project.image +
+      '" alt="' +
+      project.title +
+      '" loading="lazy">' +
+      "</div>" +
+      '<div class="portfolio-marquee-card-body">' +
+      '<span class="portfolio-marquee-card-tag body-2">' +
+      project.category +
+      "</span>" +
+      '<h3 class="portfolio-marquee-card-title">' +
+      project.title +
+      "</h3>" +
+      '<p class="portfolio-marquee-card-desc body-2">' +
+      project.shortDesc +
+      "</p>" +
+      "</div>" +
+      "</a>"
+    );
+  }
+
+  function fillMarqueeRow(rowEl, projects) {
+    if (!rowEl || !projects.length) return;
+    var cards = projects.map(portfolioCardHtml).join("");
+    rowEl.innerHTML = cards + cards;
+  }
+
+  function initPortfolioCarousel() {
+    var row1 = document.getElementById("portfolio-row-1");
+    var row2 = document.getElementById("portfolio-row-2");
+    if (!row1 || !row2 || !window.ITDOR_PORTFOLIO) return;
+
+    var list = window.ITDOR_PORTFOLIO;
+    var split = Math.ceil(list.length / 2);
+    var topRow = list.slice(0, split);
+    var bottomRow = list.slice(split);
+
+    fillMarqueeRow(row1, topRow);
+    fillMarqueeRow(row2, bottomRow);
+  }
+
   function initPortfolioGrid() {
     var grid = document.getElementById("portfolio-grid");
     if (!grid || !window.ITDOR_PORTFOLIO) return;
@@ -87,7 +135,7 @@
     var root = document.getElementById("portfolio-details-root");
     if (!root || !window.ITDOR_PORTFOLIO_BY_SLUG) return;
 
-    var slug = getParam("p") || "ecommerce-platform";
+    var slug = getParam("p") || "crafterblue-com";
     var project = window.ITDOR_PORTFOLIO_BY_SLUG[slug] || window.ITDOR_PORTFOLIO[0];
     var list = window.ITDOR_PORTFOLIO;
     var idx = list.findIndex(function (p) {
@@ -103,8 +151,15 @@
     root.querySelector("[data-pd-title]").textContent = project.title;
     root.querySelector("[data-pd-lead]").textContent = project.shortDesc;
 
-    var summary = root.querySelector("[data-pd-summary]");
-    if (summary) summary.textContent = project.description;
+    var summary = root.querySelector("[data-pd-overview]");
+    if (summary) {
+      var paragraphs = project.overview || [project.description];
+      summary.innerHTML = paragraphs
+        .map(function (text) {
+          return '<p class="lh-30">' + text + "</p>";
+        })
+        .join("");
+    }
 
     root.querySelector("[data-pd-category]").textContent = project.category;
     root.querySelector("[data-pd-client]").textContent = project.client;
@@ -113,6 +168,17 @@
 
     var duration = root.querySelector("[data-pd-duration]");
     if (duration) duration.textContent = project.duration || "—";
+
+    var website = root.querySelector("[data-pd-website]");
+    if (website) {
+      if (project.websiteUrl) {
+        website.href = project.websiteUrl;
+        website.textContent = project.websiteUrl.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
+        website.style.display = "";
+      } else {
+        website.style.display = "none";
+      }
+    }
 
     var challenge = root.querySelector("[data-pd-challenge]");
     if (challenge) challenge.textContent = project.challenge || project.description;
@@ -199,6 +265,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    initPortfolioCarousel();
     initPortfolioGrid();
     initGridFilter();
     initDetailsPage();

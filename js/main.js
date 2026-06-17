@@ -433,6 +433,9 @@
         parallaxImage();
         goTop();
         whatsappFloatCta();
+        if (typeof window.initBookMeetingButtons === "function") {
+            window.initBookMeetingButtons();
+        }
         preloader();
     });
 })(jQuery);

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if IE 8]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
@@ -255,7 +255,7 @@
                                     <span class="frame-item fw-7 fs-27">I</span>
                                     <span class="lh-30" data-pd-lead>Full-stack e-commerce solution built with Next.js, featuring real-time inventory management, payment integration, and admin dashboard.</span>
                                 </div>
-                                <p class="lh-30" data-pd-summary>Full-stack e-commerce solution built with Next.js, featuring real-time inventory management, payment integration, and admin dashboard.</p>
+                                <div class="pd-project-overview" data-pd-overview></div>
                             </div>
                         </div>
                         <div class="right">
@@ -265,19 +265,28 @@
                                 <div class="info-item"><div class="sub-title fw-5">Location</div><h5 class="title-info fw-5" data-pd-location>Boston, MA, USA</h5></div>
                                 <div class="info-item"><div class="sub-title fw-5">Published</div><h5 class="title-info fw-5" data-pd-published>2025</h5></div>
                                 <div class="info-item"><div class="sub-title fw-5">Duration</div><h5 class="title-info fw-5" data-pd-duration>5 months</h5></div>
+                                <div class="info-item"><div class="sub-title fw-5">Live Site</div><h5 class="title-info fw-5"><a href="#" data-pd-website target="_blank" rel="noopener noreferrer">—</a></h5></div>
                             </div>
                         </div>
                     </div>
-                    <div class="list-img grid-3 flex flex-wrap mb-50" data-pd-gallery></div>
+                    <div class="list-img grid-3 flex mb-50" data-pd-gallery></div>
                     <div class="details-content content-2 portfolio-case-study">
-                        <h3 class="title mb-25">The Challenge</h3>
-                        <div class="desc"><p class="lh-30" data-pd-challenge></p></div>
-                        <h3 class="title mb-25 mt-40">Our Solution</h3>
-                        <div class="desc"><p class="lh-30" data-pd-solution></p></div>
-                        <h3 class="title mb-25 mt-40">Key Results</h3>
-                        <div class="list-benefit" data-pd-results></div>
-                        <h3 class="title mb-25 mt-40">Technologies Used</h3>
-                        <div class="list-benefit" data-pd-benefits></div>
+                        <div class="pd-case-intro">
+                            <h3 class="title mb-25">The Challenge</h3>
+                            <div class="desc"><p class="lh-30" data-pd-challenge></p></div>
+                            <h3 class="title mb-25 mt-40">Our Solution</h3>
+                            <div class="desc"><p class="lh-30" data-pd-solution></p></div>
+                        </div>
+                        <div class="pd-case-columns">
+                            <div class="pd-case-col">
+                                <h3 class="title mb-25">Key Results</h3>
+                                <div class="list-benefit" data-pd-results></div>
+                            </div>
+                            <div class="pd-case-col">
+                                <h3 class="title mb-25">Technologies Used</h3>
+                                <div class="list-benefit" data-pd-benefits></div>
+                            </div>
+                        </div>
                     </div>
                     <div class="tag-social flex justify-content-between align-items-center flex-wrap g-20">
                         <div class="left tags flex g-20 align-items-center">
@@ -757,7 +766,9 @@
     <script src="js/jquery-validate.js"></script>
 
     <script src="js/portfolio-data.js"></script>
-    <script src="js/portfolio.js"></script>
+    <script src="js/portfolio.js"></script>    <script src="js/site-config.js"></script>
+    <script src="js/book-meeting.js"></script>
+
     <script type="text/javascript" src="js/main.js"></script>
     <script src="js/sibforms.js" defer></script>
     <script>

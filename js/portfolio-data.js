@@ -1,319 +1,981 @@
 window.ITDOR_PORTFOLIO = [
   {
-    slug: "ecommerce-platform",
-    id: "1",
-    title: "eCommerce",
-    category: "Web Development",
-    description: "Full-stack e-commerce solution built with Next.js, featuring real-time inventory management, payment integration, and admin dashboard.",
-    shortDesc: "Full-stack online store with real-time inventory, payments, and admin dashboard.",
-    challenge: "A regional retailer relied on a slow legacy storefront that could not sync inventory in real time, causing oversells, checkout friction, and heavy manual work for the operations team.",
-    solution: "We delivered a Next.js e-commerce platform with Stripe payments, real-time stock sync, role-based admin tools, and a mobile-first shopping experience aligned with the client's brand.",
-    results: [
-      "40% faster page loads across catalog and checkout",
-      "Real-time inventory sync reduced oversell incidents",
-      "35% faster order processing for the admin team",
-      "Improved mobile conversion with accessible, responsive UI"
+    "slug": "abeiai-com",
+    "id": "1",
+    "title": "Abei AI",
+    "category": "Web Development",
+    "folder": "abeiai.com",
+    "description": "Abei AI is a ai platform engagement focused on ai product experience with intelligent workflows and modern interface delivery. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "AI product experience with intelligent workflows and modern interface delivery.",
+    "overview": [
+      "Abei AI is a ai platform engagement focused on ai product experience with intelligent workflows and modern interface delivery. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
     ],
-    duration: "5 months",
-    image: "image/portfolio/ecommerce.avif",
-    gallery: ["image/portfolio/ecommerce.avif", "image/portfolio/ecommerce-screenshot.jpg", "image/portfolio/web-development.webp"],
-    technologies: ["Next.js", "React", "TypeScript", "Stripe", "PostgreSQL"],
-    client: "Retail & E-Commerce",
-    location: "Boston, MA, USA",
-    published: "2025",
-    featured: true
+    "challenge": "The Abei AI team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/abeiai.com/1.png",
+    "gallery": [
+      "image/portfolio/projects/abeiai.com/1.png",
+      "image/portfolio/projects/abeiai.com/2.png",
+      "image/portfolio/projects/abeiai.com/3.png",
+      "image/portfolio/projects/abeiai.com/4.png",
+      "image/portfolio/projects/abeiai.com/5.png",
+      "image/portfolio/projects/abeiai.com/6.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "AI Platform",
+    "location": "Global",
+    "published": "2024",
+    "websiteUrl": "https://abeiai.com",
+    "featured": true
   },
   {
-    slug: "saas-dashboard",
-    id: "2",
-    title: "SaaS Dashboard",
-    category: "Web Development",
-    description: "Modern SaaS application with user authentication, subscription management, and analytics dashboard.",
-    shortDesc: "Analytics and subscription management with role-based access and reporting.",
-    challenge: "A growing SaaS startup needed a unified product where billing, user roles, and product analytics lived in separate tools—slowing onboarding and making revenue reporting unreliable.",
-    solution: "We built a React and Node.js application with secure authentication, Stripe subscription flows, role-based dashboards, and exportable analytics tailored to each customer tier.",
-    results: [
-      "Single sign-on and billing in one product experience",
-      "Automated subscription lifecycle reduced manual billing work",
-      "Role-based dashboards for admins, managers, and end users",
-      "Executive reporting available without third-party exports"
+    "slug": "acgnai-art",
+    "id": "2",
+    "title": "ACGN AI",
+    "category": "Web Development",
+    "folder": "acgnai.art",
+    "description": "ACGN AI is a creative ai engagement focused on creative ai platform with visual storytelling and responsive product ui. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Creative AI platform with visual storytelling and responsive product UI.",
+    "overview": [
+      "ACGN AI is a creative ai engagement focused on creative ai platform with visual storytelling and responsive product ui. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
     ],
-    duration: "4 months",
-    image: "image/portfolio/saas-dashboard.png",
-    gallery: ["image/portfolio/saas-dashboard.png", "image/portfolio/saas-screenshot.jpg", "image/portfolio/web-development.webp"],
-    technologies: ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
-    client: "SaaS & Technology",
-    location: "Boston, MA, USA",
-    published: "2025",
-    featured: true
+    "challenge": "The ACGN AI team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/acgnai.art/1.png",
+    "gallery": [
+      "image/portfolio/projects/acgnai.art/1.png",
+      "image/portfolio/projects/acgnai.art/2.png",
+      "image/portfolio/projects/acgnai.art/3.png",
+      "image/portfolio/projects/acgnai.art/4.png",
+      "image/portfolio/projects/acgnai.art/5.png",
+      "image/portfolio/projects/acgnai.art/6.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Creative AI",
+    "location": "Global",
+    "published": "2024",
+    "websiteUrl": "https://acgnai.art",
+    "featured": true
   },
   {
-    slug: "corporate-website",
-    id: "3",
-    title: "Corporate Website",
-    category: "Web Development",
-    description: "High-performance corporate website with CMS integration, SEO optimization, and multilingual support.",
-    shortDesc: "High-performance corporate site with CMS integration and SEO optimization.",
-    challenge: "An enterprise client needed to replace an outdated marketing site that ranked poorly, loaded slowly internationally, and required developer help for every content update.",
-    solution: "We launched a Next.js corporate site with headless CMS integration, multilingual routing, structured SEO, and performance budgets enforced through edge deployment on Vercel.",
-    results: [
-      "Core Web Vitals improved across key landing pages",
-      "Marketing team published content without developer tickets",
-      "Multilingual support expanded reach to three regions",
-      "Organic search visibility improved within the first quarter"
+    "slug": "base-feishu-cn",
+    "id": "3",
+    "title": "Feishu Base",
+    "category": "Web Development",
+    "folder": "base.feishu.cn",
+    "description": "Feishu Base is a enterprise productivity engagement focused on data workspace with structured records, dashboards, and team workflows. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Data workspace with structured records, dashboards, and team workflows.",
+    "overview": [
+      "Feishu Base is a enterprise productivity engagement focused on data workspace with structured records, dashboards, and team workflows. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
     ],
-    duration: "3 months",
-    image: "image/portfolio/web-development.webp",
-    gallery: ["image/portfolio/web-development.webp", "image/portfolio/ecommerce-screenshot.jpg", "image/portfolio/marketplace.jpg"],
-    technologies: ["Next.js", "Contentful", "Tailwind CSS", "Vercel"],
-    client: "Enterprise",
-    location: "Boston, MA, USA",
-    published: "2025"
+    "challenge": "The Feishu Base team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/base.feishu.cn/1.png",
+    "gallery": [
+      "image/portfolio/projects/base.feishu.cn/1.png",
+      "image/portfolio/projects/base.feishu.cn/2.png",
+      "image/portfolio/projects/base.feishu.cn/3.png",
+      "image/portfolio/projects/base.feishu.cn/4.png",
+      "image/portfolio/projects/base.feishu.cn/5.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Enterprise Productivity",
+    "location": "China",
+    "published": "2024",
+    "websiteUrl": "https://base.feishu.cn",
+    "featured": true
   },
   {
-    slug: "fitness-tracking-app",
-    id: "4",
-    title: "Mobile Fitness App",
-    category: "Mobile Development",
-    description: "Cross-platform mobile app for fitness tracking with workout plans, progress monitoring, and social features.",
-    shortDesc: "Cross-platform app for workouts, progress tracking, and social features.",
-    challenge: "A fitness brand wanted one mobile product for iOS and Android without maintaining two separate codebases, while still supporting workouts, progress charts, and light social engagement.",
-    solution: "We shipped a React Native app with Firebase backend, personalized workout plans, progress dashboards, and social features backed by push notifications and offline-friendly caching.",
-    results: [
-      "One codebase shipped to both iOS and Android",
-      "User retention improved with personalized workout plans",
-      "Progress tracking increased weekly active engagement",
-      "Push notifications drove return visits after onboarding"
+    "slug": "beecut-cn",
+    "id": "4",
+    "title": "BeeCut",
+    "category": "Web Development",
+    "folder": "beecut.cn",
+    "description": "BeeCut is a video & media engagement focused on media product ui focused on editing workflows and clear creative tooling. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Media product UI focused on editing workflows and clear creative tooling.",
+    "overview": [
+      "BeeCut is a video & media engagement focused on media product ui focused on editing workflows and clear creative tooling. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
     ],
-    duration: "6 months",
-    image: "image/portfolio/fitness-app.png",
-    gallery: ["image/portfolio/fitness-app.png", "image/portfolio/mobile-development.webp", "image/portfolio/food-delivery.jpg"],
-    technologies: ["React Native", "Firebase", "Redux", "iOS", "Android"],
-    client: "Health & Fitness",
-    location: "Boston, MA, USA",
-    published: "2025",
-    featured: true
+    "challenge": "The BeeCut team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/beecut.cn/1.png",
+    "gallery": [
+      "image/portfolio/projects/beecut.cn/1.png",
+      "image/portfolio/projects/beecut.cn/2.png",
+      "image/portfolio/projects/beecut.cn/3.png",
+      "image/portfolio/projects/beecut.cn/4.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Video & Media",
+    "location": "China",
+    "published": "2024",
+    "websiteUrl": "https://beecut.cn",
+    "featured": true
   },
   {
-    slug: "food-delivery-app",
-    id: "5",
-    title: "Food Delivery App",
-    category: "Mobile Development",
-    description: "Native mobile application for food ordering with real-time tracking, payment processing, and push notifications.",
-    shortDesc: "Food ordering app with real-time tracking, payments, and push notifications.",
-    challenge: "A local food operator needed a branded ordering app with live delivery tracking, secure payments, and reliable notifications—without relying on marketplace platforms.",
-    solution: "We built a Flutter app with Google Maps tracking, Stripe payments, order status workflows, and Firebase push messaging integrated with the client's kitchen operations.",
-    results: [
-      "End-to-end ordering and payment in a branded app",
-      "Live map tracking improved customer confidence",
-      "Push alerts reduced missed pickup and delivery windows",
-      "Operations team gained clearer order queue visibility"
+    "slug": "chanjing-cc",
+    "id": "5",
+    "title": "Chanjing",
+    "category": "Web Development",
+    "folder": "chanjing.cc",
+    "description": "Chanjing is a digital product engagement focused on product platform with structured content and conversion-focused layouts. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Product platform with structured content and conversion-focused layouts.",
+    "overview": [
+      "Chanjing is a digital product engagement focused on product platform with structured content and conversion-focused layouts. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
     ],
-    duration: "5 months",
-    image: "image/portfolio/food-delivery.jpg",
-    gallery: ["image/portfolio/food-delivery.jpg", "image/portfolio/mobile-development.webp", "image/portfolio/fitness-app.png"],
-    technologies: ["Flutter", "Dart", "Firebase", "Stripe", "Google Maps"],
-    client: "Food & Logistics",
-    location: "Boston, MA, USA",
-    published: "2025"
+    "challenge": "The Chanjing team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/chanjing.cc/1.png",
+    "gallery": [
+      "image/portfolio/projects/chanjing.cc/1.png",
+      "image/portfolio/projects/chanjing.cc/2.png",
+      "image/portfolio/projects/chanjing.cc/3.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Digital Product",
+    "location": "Global",
+    "published": "2024",
+    "websiteUrl": "https://chanjing.cc",
+    "featured": false
   },
   {
-    slug: "banking-app-redesign",
-    id: "6",
-    title: "Banking App Redesign",
-    category: "UI/UX Design",
-    description: "Complete UI/UX redesign for a mobile banking application, improving user experience and conversion rates by 40%.",
-    shortDesc: "Mobile banking redesign focused on usability and conversion improvement.",
-    challenge: "A financial services client faced low mobile task completion rates due to cluttered screens, unclear navigation, and inconsistent patterns across account, transfer, and support flows.",
-    solution: "We ran user research, rebuilt the design system in Figma, prototyped critical journeys, and delivered developer-ready specs focused on clarity, trust, and faster task completion.",
-    results: [
-      "40% improvement in key conversion flows",
-      "Reduced steps to complete transfers and bill pay",
-      "Consistent design system across all mobile screens",
-      "Accessibility improvements aligned with WCAG guidance"
+    "slug": "crafterblue-com",
+    "id": "6",
+    "title": "Crafter Blue",
+    "category": "Web Development",
+    "folder": "crafterblue.com",
+    "description": "Crafter Blue is a retail & e-commerce engagement focused on shopify e-commerce with product storytelling and performance-focused frontend. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Shopify e-commerce with product storytelling and performance-focused frontend.",
+    "overview": [
+      "Crafter Blue is a retail & e-commerce engagement focused on shopify e-commerce with product storytelling and performance-focused frontend. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
     ],
-    duration: "3 months",
-    image: "image/portfolio/fintech.jpg",
-    gallery: ["image/portfolio/fintech.jpg", "image/portfolio/design.webp", "image/portfolio/saas-dashboard.png"],
-    technologies: ["Figma", "Adobe XD", "User Research", "Prototyping"],
-    client: "Financial Services",
-    location: "Boston, MA, USA",
-    published: "2025"
+    "challenge": "The Crafter Blue team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/crafterblue.com/1.png",
+    "gallery": [
+      "image/portfolio/projects/crafterblue.com/1.png",
+      "image/portfolio/projects/crafterblue.com/2.png",
+      "image/portfolio/projects/crafterblue.com/3.png",
+      "image/portfolio/projects/crafterblue.com/4.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Retail & E-Commerce",
+    "location": "Global",
+    "published": "2024",
+    "websiteUrl": "https://crafterblue.com",
+    "featured": false
   },
   {
-    slug: "healthcare-portal",
-    id: "7",
-    title: "Healthcare Portal Design",
-    category: "UI/UX Design",
-    description: "User-centered design for a patient portal with focus on accessibility and ease of use.",
-    shortDesc: "Patient portal design with accessibility and ease of use at the center.",
-    challenge: "A healthcare provider needed a patient portal that older adults and caregivers could use confidently for appointments, records, and secure messaging.",
-    solution: "We designed an accessible portal with simplified navigation, high-contrast layouts, plain-language labels, and WCAG-oriented patterns validated through usability testing.",
-    results: [
-      "Clearer appointment and records workflows for patients",
-      "Accessibility-first patterns reduced support call volume",
-      "Design system accelerated future portal features",
-      "Care teams reported faster patient self-service adoption"
+    "slug": "d-mop-com",
+    "id": "7",
+    "title": "D-mop",
+    "category": "Web Development",
+    "folder": "d-mop.com",
+    "description": "D-mop is a fashion retail engagement focused on fashion commerce with category discovery and mobile-first merchandising. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Fashion commerce with category discovery and mobile-first merchandising.",
+    "overview": [
+      "D-mop is a fashion retail engagement focused on fashion commerce with category discovery and mobile-first merchandising. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
     ],
-    duration: "4 months",
-    image: "image/portfolio/healthcare.jpg",
-    gallery: ["image/portfolio/healthcare.jpg", "image/portfolio/healthcare-screenshot.jpg", "image/portfolio/design.webp"],
-    technologies: ["Figma", "Design Systems", "Accessibility", "WCAG"],
-    client: "Healthcare",
-    location: "Boston, MA, USA",
-    published: "2025"
+    "challenge": "The D-mop team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/d-mop.com/1.png",
+    "gallery": [
+      "image/portfolio/projects/d-mop.com/1.png",
+      "image/portfolio/projects/d-mop.com/2.png",
+      "image/portfolio/projects/d-mop.com/3.png",
+      "image/portfolio/projects/d-mop.com/4.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Fashion Retail",
+    "location": "Global",
+    "published": "2024",
+    "websiteUrl": "https://d-mop.com",
+    "featured": false
   },
   {
-    slug: "chatbot-platform",
-    id: "8",
-    title: "AI Agent",
-    category: "AI Solutions",
-    description: "AI-powered customer service chatbot with natural language processing and multi-language support.",
-    shortDesc: "Chatbot with NLP and multi-language support for support and sales.",
-    challenge: "A support-heavy organization struggled with repetitive tickets, slow first-response times, and no after-hours coverage across English and Spanish inquiries.",
-    solution: "We deployed an AI agent with NLP routing, knowledge-base grounding, escalation to human agents, and multilingual responses integrated into the client's support stack.",
-    results: [
-      "Faster first-response times on common inquiries",
-      "After-hours coverage without added headcount",
-      "Human agents focused on complex, high-value tickets",
-      "Multilingual support improved customer satisfaction scores"
+    "slug": "drinknixie-com",
+    "id": "8",
+    "title": "Drink Nixie",
+    "category": "Web Development",
+    "folder": "drinknixie.com",
+    "description": "Drink Nixie is a food & beverage engagement focused on d2c beverage storefront with brand storytelling and mobile-first checkout. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "D2C beverage storefront with brand storytelling and mobile-first checkout.",
+    "overview": [
+      "Drink Nixie is a food & beverage engagement focused on d2c beverage storefront with brand storytelling and mobile-first checkout. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
     ],
-    duration: "4 months",
-    image: "image/portfolio/ai-assistant.png",
-    gallery: ["image/portfolio/ai-assistant.png", "image/portfolio/ai-screenshot.jpg", "image/portfolio/ai-solutions.webp"],
-    technologies: ["Python", "OpenAI", "NLP", "FastAPI", "Docker"],
-    client: "Customer Support",
-    location: "Boston, MA, USA",
-    published: "2025",
-    featured: true
+    "challenge": "The Drink Nixie team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/drinknixie.com/1.png",
+    "gallery": [
+      "image/portfolio/projects/drinknixie.com/1.png",
+      "image/portfolio/projects/drinknixie.com/2.png",
+      "image/portfolio/projects/drinknixie.com/3.png",
+      "image/portfolio/projects/drinknixie.com/4.png",
+      "image/portfolio/projects/drinknixie.com/5.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Food & Beverage",
+    "location": "Global",
+    "published": "2024",
+    "websiteUrl": "https://drinknixie.com",
+    "featured": false
   },
   {
-    slug: "predictive-analytics",
-    id: "9",
-    title: "Predictive Analytics Dashboard",
-    category: "AI Solutions",
-    description: "Machine learning platform for business intelligence with predictive analytics and data visualization.",
-    shortDesc: "ML platform for business intelligence with predictive analytics and visualization.",
-    challenge: "Leadership lacked forward-looking visibility into demand and churn because reporting tools only showed historical spreadsheets with no predictive signals.",
-    solution: "We built an ML-backed analytics platform with TensorFlow models, interactive React dashboards, and automated data pipelines feeding leadership and operations teams.",
-    results: [
-      "Predictive dashboards replaced manual spreadsheet reporting",
-      "Leadership gained early visibility into demand trends",
-      "Automated pipelines reduced data prep time each week",
-      "Models retrained on schedule with monitored accuracy"
+    "slug": "foodpanda-hk",
+    "id": "9",
+    "title": "foodpanda HK",
+    "category": "Web Development",
+    "folder": "foodpanda.hk",
+    "description": "foodpanda HK is a food delivery platform engagement focused on high-traffic ordering flows with consistent frontend and rapid checkout ux. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "High-traffic ordering flows with consistent frontend and rapid checkout UX.",
+    "overview": [
+      "foodpanda HK is a food delivery platform engagement focused on high-traffic ordering flows with consistent frontend and rapid checkout ux. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
     ],
-    duration: "6 months",
-    image: "image/portfolio/ai-solutions.webp",
-    gallery: ["image/portfolio/ai-solutions.webp", "image/portfolio/ai-screenshot.jpg", "image/portfolio/saas-dashboard.png"],
-    technologies: ["Python", "TensorFlow", "React", "PostgreSQL", "AWS"],
-    client: "Analytics & BI",
-    location: "Boston, MA, USA",
-    published: "2025"
+    "challenge": "The foodpanda HK team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/foodpanda.hk/1.png",
+    "gallery": [
+      "image/portfolio/projects/foodpanda.hk/1.png",
+      "image/portfolio/projects/foodpanda.hk/2.png",
+      "image/portfolio/projects/foodpanda.hk/3.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Food Delivery Platform",
+    "location": "Hong Kong",
+    "published": "2024",
+    "websiteUrl": "https://foodpanda.hk",
+    "featured": false
   },
   {
-    slug: "microservices-architecture",
-    id: "10",
-    title: "Microservices Architecture",
-    category: "Cloud Services",
-    description: "Scalable cloud infrastructure with microservices architecture, containerization, and CI/CD pipelines.",
-    shortDesc: "Scalable cloud infrastructure with microservices and containerization.",
-    challenge: "A monolithic production system created deployment risk, scaling bottlenecks, and long release cycles whenever one team needed to ship independently.",
-    solution: "We migrated core services to AWS with Docker and Kubernetes, defined service boundaries, and introduced infrastructure as code with automated deployment pipelines.",
-    results: [
-      "Independent service deployments without full-site releases",
-      "Horizontal scaling for high-traffic workloads",
-      "Infrastructure as code improved environment consistency",
-      "Incident recovery time decreased with container rollbacks"
+    "slug": "hhp-com-hk",
+    "id": "10",
+    "title": "HHP",
+    "category": "Web Development",
+    "folder": "hhp.com.hk",
+    "description": "HHP is a retail & e-commerce engagement focused on commerce catalog with clean hierarchy and maintainable frontend components. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Commerce catalog with clean hierarchy and maintainable frontend components.",
+    "overview": [
+      "HHP is a retail & e-commerce engagement focused on commerce catalog with clean hierarchy and maintainable frontend components. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
     ],
-    duration: "7 months",
-    image: "image/portfolio/cloud-services.webp",
-    gallery: ["image/portfolio/cloud-services.webp", "image/portfolio/devops.webp", "image/portfolio/saas-dashboard.png"],
-    technologies: ["AWS", "Docker", "Kubernetes", "Terraform", "GitLab CI"],
-    client: "Cloud Infrastructure",
-    location: "Boston, MA, USA",
-    published: "2025"
+    "challenge": "The HHP team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/hhp.com.hk/1.png",
+    "gallery": [
+      "image/portfolio/projects/hhp.com.hk/1.png",
+      "image/portfolio/projects/hhp.com.hk/2.png",
+      "image/portfolio/projects/hhp.com.hk/3.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Retail & E-Commerce",
+    "location": "Hong Kong",
+    "published": "2024",
+    "websiteUrl": "https://hhp.com.hk",
+    "featured": false
   },
   {
-    slug: "cicd-pipeline",
-    id: "11",
-    title: "CI/CD Pipeline Setup",
-    category: "DevOps & CI/CD",
-    description: "Automated deployment pipeline with testing, building, and deployment to multiple environments.",
-    shortDesc: "Automated deployment pipeline across testing, build, and production environments.",
-    challenge: "Engineering teams deployed manually with inconsistent test coverage, causing regressions and slow, stressful production releases.",
-    solution: "We implemented GitHub Actions and Jenkins pipelines with automated tests, staged environments, container builds, and gated production deployments.",
-    results: [
-      "Automated test gates before every production release",
-      "Deployment frequency increased with lower rollback risk",
-      "Staging environments mirrored production configuration",
-      "Release documentation generated from pipeline metadata"
+    "slug": "hidreamai-com",
+    "id": "11",
+    "title": "HiDream AI",
+    "category": "Web Development",
+    "folder": "hidreamai.com",
+    "description": "HiDream AI is a ai platform engagement focused on ai platform ui with model-driven experiences and scalable interface patterns. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "AI platform UI with model-driven experiences and scalable interface patterns.",
+    "overview": [
+      "HiDream AI is a ai platform engagement focused on ai platform ui with model-driven experiences and scalable interface patterns. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
     ],
-    duration: "2 months",
-    image: "image/portfolio/devops.webp",
-    gallery: ["image/portfolio/devops.webp", "image/portfolio/cloud-services.webp", "image/portfolio/support.avif"],
-    technologies: ["Jenkins", "Docker", "Kubernetes", "GitHub Actions", "AWS"],
-    client: "DevOps & Engineering",
-    location: "Boston, MA, USA",
-    published: "2025"
+    "challenge": "The HiDream AI team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/hidreamai.com/1.png",
+    "gallery": [
+      "image/portfolio/projects/hidreamai.com/1.png",
+      "image/portfolio/projects/hidreamai.com/2.png",
+      "image/portfolio/projects/hidreamai.com/3.png",
+      "image/portfolio/projects/hidreamai.com/4.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "AI Platform",
+    "location": "Global",
+    "published": "2024",
+    "websiteUrl": "https://hidreamai.com",
+    "featured": false
   },
   {
-    slug: "legacy-modernization",
-    id: "12",
-    title: "Legacy System Modernization",
-    category: "Digital Transformation",
-    description: "Complete digital transformation of legacy systems to modern cloud-based architecture.",
-    shortDesc: "Modernization of legacy systems to cloud-based architecture.",
-    challenge: "Critical business workflows still ran on legacy systems with brittle integrations, high maintenance cost, and no path to modern APIs or cloud scaling.",
-    solution: "We phased legacy workloads into cloud-native services, introduced API layers for integrations, and migrated data with validation checkpoints to minimize downtime.",
-    results: [
-      "Legacy dependencies reduced across core workflows",
-      "Modern APIs enabled new product integrations",
-      "Maintenance costs decreased after cloud migration",
-      "Business continuity maintained during phased rollout"
+    "slug": "ihuiwa-com",
+    "id": "12",
+    "title": "iHUIWA",
+    "category": "Web Development",
+    "folder": "ihuiwa.com",
+    "description": "iHUIWA is a retail & e-commerce engagement focused on modern e-commerce with brand presentation and streamlined conversion flow. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Modern e-commerce with brand presentation and streamlined conversion flow.",
+    "overview": [
+      "iHUIWA is a retail & e-commerce engagement focused on modern e-commerce with brand presentation and streamlined conversion flow. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
     ],
-    duration: "8 months",
-    image: "image/portfolio/digital-transform.jpg",
-    gallery: ["image/portfolio/digital-transform.jpg", "image/portfolio/cloud-services.webp", "image/portfolio/web-development.webp"],
-    technologies: ["Cloud Migration", "API Integration", "Microservices", "AWS"],
-    client: "Enterprise IT",
-    location: "Boston, MA, USA",
-    published: "2025"
+    "challenge": "The iHUIWA team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/ihuiwa.com/1.png",
+    "gallery": [
+      "image/portfolio/projects/ihuiwa.com/1.png",
+      "image/portfolio/projects/ihuiwa.com/2.png",
+      "image/portfolio/projects/ihuiwa.com/3.png",
+      "image/portfolio/projects/ihuiwa.com/4.png",
+      "image/portfolio/projects/ihuiwa.com/5.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Retail & E-Commerce",
+    "location": "Global",
+    "published": "2024",
+    "websiteUrl": "https://ihuiwa.com",
+    "featured": false
   },
   {
-    slug: "monitoring-system",
-    id: "13",
-    title: "24/7 Monitoring System",
-    category: "Support & Maintenance",
-    description: "Comprehensive monitoring and maintenance solution with automated alerts and performance optimization.",
-    shortDesc: "Monitoring and maintenance with automated alerts and performance tuning.",
-    challenge: "Operations teams learned about outages from customers first because monitoring was fragmented across servers, apps, and third-party services.",
-    solution: "We deployed unified monitoring with automated alerts, runbooks, performance baselines, and maintenance windows coordinated with the client's support team.",
-    results: [
-      "Proactive alerts before customer-impacting outages",
-      "Centralized visibility across apps and infrastructure",
-      "Performance tuning reduced recurring incident volume",
-      "Support team gained clearer escalation playbooks"
+    "slug": "ipega-hk",
+    "id": "13",
+    "title": "IPEGA",
+    "category": "Web Development",
+    "folder": "ipega.hk",
+    "description": "IPEGA is a consumer electronics engagement focused on product site with hardware-focused merchandising and responsive catalog ux. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Product site with hardware-focused merchandising and responsive catalog UX.",
+    "overview": [
+      "IPEGA is a consumer electronics engagement focused on product site with hardware-focused merchandising and responsive catalog ux. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
     ],
-    duration: "3 months",
-    image: "image/portfolio/support.avif",
-    gallery: ["image/portfolio/support.avif", "image/portfolio/devops.webp", "image/portfolio/cloud-services.webp"],
-    technologies: ["Monitoring", "Automation", "Performance Tuning", "AWS"],
-    client: "IT Operations",
-    location: "Boston, MA, USA",
-    published: "2025"
+    "challenge": "The IPEGA team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/ipega.hk/1.png",
+    "gallery": [
+      "image/portfolio/projects/ipega.hk/1.png",
+      "image/portfolio/projects/ipega.hk/2.png",
+      "image/portfolio/projects/ipega.hk/3.png",
+      "image/portfolio/projects/ipega.hk/4.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Consumer Electronics",
+    "location": "Hong Kong",
+    "published": "2024",
+    "websiteUrl": "https://ipega.hk",
+    "featured": false
+  },
+  {
+    "slug": "jimeng-jianying-com",
+    "id": "14",
+    "title": "Jimeng",
+    "category": "Web Development",
+    "folder": "jimeng.jianying.com",
+    "description": "Jimeng is a creative platform engagement focused on creative product experience with media-rich layouts and smooth interactions. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Creative product experience with media-rich layouts and smooth interactions.",
+    "overview": [
+      "Jimeng is a creative platform engagement focused on creative product experience with media-rich layouts and smooth interactions. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
+    ],
+    "challenge": "The Jimeng team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/jimeng.jianying.com/1.png",
+    "gallery": [
+      "image/portfolio/projects/jimeng.jianying.com/1.png",
+      "image/portfolio/projects/jimeng.jianying.com/2.png",
+      "image/portfolio/projects/jimeng.jianying.com/3.png",
+      "image/portfolio/projects/jimeng.jianying.com/4.png",
+      "image/portfolio/projects/jimeng.jianying.com/5.png",
+      "image/portfolio/projects/jimeng.jianying.com/6.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Creative Platform",
+    "location": "Global",
+    "published": "2024",
+    "websiteUrl": "https://jimeng.jianying.com",
+    "featured": false
+  },
+  {
+    "slug": "kizunaai-com",
+    "id": "15",
+    "title": "Kizuna AI",
+    "category": "Web Development",
+    "folder": "kizunaai.com",
+    "description": "Kizuna AI is a entertainment & media engagement focused on brand and content platform with engaging media presentation and community ux. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Brand and content platform with engaging media presentation and community UX.",
+    "overview": [
+      "Kizuna AI is a entertainment & media engagement focused on brand and content platform with engaging media presentation and community ux. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
+    ],
+    "challenge": "The Kizuna AI team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/kizunaai.com/1.png",
+    "gallery": [
+      "image/portfolio/projects/kizunaai.com/1.png",
+      "image/portfolio/projects/kizunaai.com/2.png",
+      "image/portfolio/projects/kizunaai.com/3.png",
+      "image/portfolio/projects/kizunaai.com/4.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Entertainment & Media",
+    "location": "Global",
+    "published": "2024",
+    "websiteUrl": "https://kizunaai.com",
+    "featured": false
+  },
+  {
+    "slug": "marketing-k-fashionshop-com",
+    "id": "16",
+    "title": "K-Fashion Shop",
+    "category": "Web Development",
+    "folder": "marketing.k-fashionshop.com",
+    "description": "K-Fashion Shop is a fashion retail engagement focused on fashion marketing site with campaign layouts and product discovery paths. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Fashion marketing site with campaign layouts and product discovery paths.",
+    "overview": [
+      "K-Fashion Shop is a fashion retail engagement focused on fashion marketing site with campaign layouts and product discovery paths. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
+    ],
+    "challenge": "The K-Fashion Shop team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/marketing.k-fashionshop.com/1.png",
+    "gallery": [
+      "image/portfolio/projects/marketing.k-fashionshop.com/1.png",
+      "image/portfolio/projects/marketing.k-fashionshop.com/2.png",
+      "image/portfolio/projects/marketing.k-fashionshop.com/3.png",
+      "image/portfolio/projects/marketing.k-fashionshop.com/4.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Fashion Retail",
+    "location": "Global",
+    "published": "2024",
+    "websiteUrl": "https://k-fashionshop.com",
+    "featured": false
+  },
+  {
+    "slug": "namkee-hk",
+    "id": "17",
+    "title": "Nam Kee",
+    "category": "Web Development",
+    "folder": "namkee.hk",
+    "description": "Nam Kee is a food & hospitality engagement focused on hospitality brand site with menu storytelling and location-focused content. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Hospitality brand site with menu storytelling and location-focused content.",
+    "overview": [
+      "Nam Kee is a food & hospitality engagement focused on hospitality brand site with menu storytelling and location-focused content. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
+    ],
+    "challenge": "The Nam Kee team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/namkee.hk/1.png",
+    "gallery": [
+      "image/portfolio/projects/namkee.hk/1.png",
+      "image/portfolio/projects/namkee.hk/2.png",
+      "image/portfolio/projects/namkee.hk/3.png",
+      "image/portfolio/projects/namkee.hk/4.png",
+      "image/portfolio/projects/namkee.hk/5.png",
+      "image/portfolio/projects/namkee.hk/6.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Food & Hospitality",
+    "location": "Hong Kong",
+    "published": "2024",
+    "websiteUrl": "https://namkee.hk",
+    "featured": false
+  },
+  {
+    "slug": "oiad-hk",
+    "id": "18",
+    "title": "OIAD",
+    "category": "Web Development",
+    "folder": "oiad.hk",
+    "description": "OIAD is a professional services engagement focused on brand website with structured content and clear service messaging. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Brand website with structured content and clear service messaging.",
+    "overview": [
+      "OIAD is a professional services engagement focused on brand website with structured content and clear service messaging. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
+    ],
+    "challenge": "The OIAD team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/oiad.hk/1.png",
+    "gallery": [
+      "image/portfolio/projects/oiad.hk/1.png",
+      "image/portfolio/projects/oiad.hk/2.png",
+      "image/portfolio/projects/oiad.hk/3.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Professional Services",
+    "location": "Hong Kong",
+    "published": "2024",
+    "websiteUrl": "https://oiad.hk",
+    "featured": false
+  },
+  {
+    "slug": "order-sen-ryo-com-hk",
+    "id": "19",
+    "title": "Sen-Ryo Order",
+    "category": "Web Development",
+    "folder": "order.sen-ryo.com.hk",
+    "description": "Sen-Ryo Order is a food & hospitality engagement focused on online ordering experience with streamlined menu flows and mobile checkout. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Online ordering experience with streamlined menu flows and mobile checkout.",
+    "overview": [
+      "Sen-Ryo Order is a food & hospitality engagement focused on online ordering experience with streamlined menu flows and mobile checkout. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
+    ],
+    "challenge": "The Sen-Ryo Order team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/order.sen-ryo.com.hk/1.png",
+    "gallery": [
+      "image/portfolio/projects/order.sen-ryo.com.hk/1.png",
+      "image/portfolio/projects/order.sen-ryo.com.hk/2.png",
+      "image/portfolio/projects/order.sen-ryo.com.hk/3.png",
+      "image/portfolio/projects/order.sen-ryo.com.hk/4.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Food & Hospitality",
+    "location": "Hong Kong",
+    "published": "2024",
+    "websiteUrl": "https://order.sen-ryo.com.hk",
+    "featured": false
+  },
+  {
+    "slug": "petshack-hk",
+    "id": "20",
+    "title": "Petshack HK",
+    "category": "Web Development",
+    "folder": "petshack.hk",
+    "description": "Petshack HK is a pet retail engagement focused on pet retail e-commerce with trust cues and straightforward checkout. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Pet retail e-commerce with trust cues and straightforward checkout.",
+    "overview": [
+      "Petshack HK is a pet retail engagement focused on pet retail e-commerce with trust cues and straightforward checkout. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
+    ],
+    "challenge": "The Petshack HK team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/petshack.hk/1.png",
+    "gallery": [
+      "image/portfolio/projects/petshack.hk/1.png",
+      "image/portfolio/projects/petshack.hk/2.png",
+      "image/portfolio/projects/petshack.hk/3.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Pet Retail",
+    "location": "Hong Kong",
+    "published": "2024",
+    "websiteUrl": "https://petshack.hk",
+    "featured": false
+  },
+  {
+    "slug": "the-cubehouse-com",
+    "id": "21",
+    "title": "The Cube House",
+    "category": "Web Development",
+    "folder": "the-cubehouse.com",
+    "description": "The Cube House is a lifestyle retail engagement focused on lifestyle commerce balancing visual storytelling with conversion-focused ui. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Lifestyle commerce balancing visual storytelling with conversion-focused UI.",
+    "overview": [
+      "The Cube House is a lifestyle retail engagement focused on lifestyle commerce balancing visual storytelling with conversion-focused ui. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
+    ],
+    "challenge": "The The Cube House team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/the-cubehouse.com/1.png",
+    "gallery": [
+      "image/portfolio/projects/the-cubehouse.com/1.png",
+      "image/portfolio/projects/the-cubehouse.com/2.png",
+      "image/portfolio/projects/the-cubehouse.com/3.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Lifestyle Retail",
+    "location": "Global",
+    "published": "2024",
+    "websiteUrl": "https://the-cubehouse.com",
+    "featured": false
+  },
+  {
+    "slug": "thehungryfamily-com",
+    "id": "22",
+    "title": "The Hungry Family",
+    "category": "Web Development",
+    "folder": "thehungryfamily.com",
+    "description": "The Hungry Family is a content-rich food and lifestyle platform built for frequent editorial publishing. Recipes, guides, and feature stories needed to stay readable during long scroll sessions while still giving new visitors clear paths into categories and featured collections.",
+    "shortDesc": "Editorial food platform with readable long-form content and scalable templates.",
+    "overview": [
+      "The Hungry Family is a content-rich food and lifestyle platform built for frequent editorial publishing. Recipes, guides, and feature stories needed to stay readable during long scroll sessions while still giving new visitors clear paths into categories and featured collections.",
+      "We structured article templates, category landing pages, and featured content modules so the editorial team can publish without developer support. Typography, spacing, and image treatment were tuned for food photography and long-form reading on both desktop and mobile.",
+      "The build prioritized performance-conscious media delivery, semantic page structure, and reusable components that scale as new categories, campaigns, and sponsored features are introduced over time."
+    ],
+    "challenge": "The The Hungry Family team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/thehungryfamily.com/1.png",
+    "gallery": [
+      "image/portfolio/projects/thehungryfamily.com/1.png",
+      "image/portfolio/projects/thehungryfamily.com/2.png",
+      "image/portfolio/projects/thehungryfamily.com/3.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Food & Lifestyle Media",
+    "location": "Global",
+    "published": "2024",
+    "websiteUrl": "https://thehungryfamily.com",
+    "featured": false
+  },
+  {
+    "slug": "whee-com",
+    "id": "23",
+    "title": "Whee",
+    "category": "Web Development",
+    "folder": "whee.com",
+    "description": "Whee is a digital product engagement focused on product platform with polished ui, responsive layouts, and clear user journeys. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+    "shortDesc": "Product platform with polished UI, responsive layouts, and clear user journeys.",
+    "overview": [
+      "Whee is a digital product engagement focused on product platform with polished ui, responsive layouts, and clear user journeys. The experience needed to feel polished for everyday users while remaining practical for the team to extend with new pages, campaigns, and content updates.",
+      "We shaped the frontend around reusable layout patterns, responsive breakpoints, and clear visual hierarchy so primary journeys stay fast and easy to scan. Component structure, media handling, and interaction details were aligned with how the product is maintained over time.",
+      "Delivery emphasized performance, accessibility-minded markup, and a maintainable codebase the client can evolve without rework. The result is a stable foundation for ongoing growth across desktop, tablet, and mobile touchpoints."
+    ],
+    "challenge": "The Whee team needed a reliable web experience that could scale with growing traffic, content updates, and evolving product requirements without sacrificing speed or clarity.",
+    "solution": "We delivered a responsive frontend with reusable components, optimized media handling, and a structure that supports ongoing merchandising, content, and feature updates.",
+    "results": [
+      "Responsive experience across desktop, tablet, and mobile",
+      "Clear information hierarchy for faster user task completion",
+      "Maintainable component structure for future updates",
+      "Performance-conscious layout and asset delivery"
+    ],
+    "duration": "3 months",
+    "image": "image/portfolio/projects/whee.com/1.png",
+    "gallery": [
+      "image/portfolio/projects/whee.com/1.png",
+      "image/portfolio/projects/whee.com/2.png",
+      "image/portfolio/projects/whee.com/3.png",
+      "image/portfolio/projects/whee.com/4.png",
+      "image/portfolio/projects/whee.com/5.png",
+      "image/portfolio/projects/whee.com/6.png"
+    ],
+    "technologies": [
+      "Responsive UI",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Web Development"
+    ],
+    "client": "Digital Product",
+    "location": "Global",
+    "published": "2024",
+    "websiteUrl": "https://whee.com",
+    "featured": false
   }
 ];
 
 window.ITDOR_PORTFOLIO_CATEGORIES = [
   "Show All",
-  "Web Development",
-  "Mobile Development",
-  "UI/UX Design",
-  "AI Solutions",
-  "Cloud Services",
-  "DevOps & CI/CD",
-  "Digital Transformation",
-  "Support & Maintenance"
+  "Web Development"
 ];
 
 window.ITDOR_PORTFOLIO_BY_SLUG = window.ITDOR_PORTFOLIO.reduce(function (acc, item) {
