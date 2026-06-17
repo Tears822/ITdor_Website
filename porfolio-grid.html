@@ -202,15 +202,27 @@
 
         <!-- Main-content -->
 
-        <div class="main-content tf-spacing-2 portfolio-grid-page">
-            <div class="portfolio-marquee-wrap">
-                <div class="portfolio-marquee-row portfolio-marquee-row--right" aria-label="Portfolio row scrolling right">
-                    <div class="portfolio-marquee-track" id="portfolio-row-1"></div>
-                </div>
-                <div class="portfolio-marquee-row portfolio-marquee-row--left" aria-label="Portfolio row scrolling left">
-                    <div class="portfolio-marquee-track" id="portfolio-row-2"></div>
-                </div>
+        <div class="main-content portfolio-grid-page tf-spacing-2">
+            <div class="tf-container portfolio-grid-page-head">
+                <p class="portfolio-gallery-lead lh-30 text-center">Client builds across e-commerce, platforms, and brand experiences — hover to preview, click to open the case study.</p>
             </div>
+            <section class="portfolio-mosaic-wrap" id="portfolio-mosaic-wrap">
+                <div class="portfolio-mosaic" id="portfolio-mosaic" aria-label="Software portfolio projects"></div>
+                <div class="portfolio-mosaic-overlay" id="portfolio-mosaic-overlay" aria-hidden="true">
+                    <div class="portfolio-mosaic-overlay__inner">
+                        <button type="button" class="portfolio-mosaic-overlay__close" id="portfolio-mosaic-close" aria-label="Close preview">
+                            Close <i class="icon-close"></i>
+                        </button>
+                        <img class="portfolio-mosaic-overlay__image" id="portfolio-mosaic-overlay-img" src="" alt="">
+                        <div class="portfolio-mosaic-overlay__body">
+                            <span class="portfolio-mosaic-overlay__tag body-2 fw-7" id="portfolio-mosaic-overlay-tag"></span>
+                            <h3 class="portfolio-mosaic-overlay__title" id="portfolio-mosaic-overlay-title"></h3>
+                            <p class="portfolio-mosaic-overlay__desc body-2 lh-30" id="portfolio-mosaic-overlay-desc"></p>
+                            <a href="#" class="tf-btn portfolio-mosaic-overlay__cta" id="portfolio-mosaic-overlay-cta"><span>View Case Study</span><i class="icon-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <!-- /.main-content -->

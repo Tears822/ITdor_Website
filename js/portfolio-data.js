@@ -41,7 +41,7 @@ window.ITDOR_PORTFOLIO = [
     "location": "Global",
     "published": "2024",
     "websiteUrl": "https://abeiai.com",
-    "featured": true
+    "featured": false
   },
   {
     "slug": "acgnai-art",
@@ -85,7 +85,7 @@ window.ITDOR_PORTFOLIO = [
     "location": "Global",
     "published": "2024",
     "websiteUrl": "https://acgnai.art",
-    "featured": true
+    "featured": false
   },
   {
     "slug": "base-feishu-cn",
@@ -128,7 +128,7 @@ window.ITDOR_PORTFOLIO = [
     "location": "China",
     "published": "2024",
     "websiteUrl": "https://base.feishu.cn",
-    "featured": true
+    "featured": false
   },
   {
     "slug": "beecut-cn",
@@ -170,7 +170,7 @@ window.ITDOR_PORTFOLIO = [
     "location": "China",
     "published": "2024",
     "websiteUrl": "https://beecut.cn",
-    "featured": true
+    "featured": false
   },
   {
     "slug": "chanjing-cc",
@@ -253,7 +253,7 @@ window.ITDOR_PORTFOLIO = [
     "location": "Global",
     "published": "2024",
     "websiteUrl": "https://crafterblue.com",
-    "featured": false
+    "featured": true
   },
   {
     "slug": "d-mop-com",
@@ -338,7 +338,7 @@ window.ITDOR_PORTFOLIO = [
     "location": "Global",
     "published": "2024",
     "websiteUrl": "https://drinknixie.com",
-    "featured": false
+    "featured": true
   },
   {
     "slug": "foodpanda-hk",
@@ -379,7 +379,7 @@ window.ITDOR_PORTFOLIO = [
     "location": "Hong Kong",
     "published": "2024",
     "websiteUrl": "https://foodpanda.hk",
-    "featured": false
+    "featured": true
   },
   {
     "slug": "hhp-com-hk",
@@ -505,7 +505,7 @@ window.ITDOR_PORTFOLIO = [
     "location": "Global",
     "published": "2024",
     "websiteUrl": "https://ihuiwa.com",
-    "featured": false
+    "featured": true
   },
   {
     "slug": "ipega-hk",

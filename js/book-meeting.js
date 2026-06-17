@@ -14,8 +14,7 @@
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     link.className = className || "tf-btn tf-btn-book-meeting book-meeting-btn";
-    link.innerHTML =
-      '<span>Book Meeting</span><i class="icon-calendar-days"></i>';
+    link.innerHTML = "<span>Book Meeting</span>";
     return link;
   }
 

@@ -4,6 +4,12 @@ const path = require("path");
 const PROJECTS_DIR = path.join(__dirname, "../image/portfolio/projects");
 const OUT_FILE = path.join(__dirname, "../js/portfolio-data.js");
 const EXCLUDE = new Set(["qualisage.com"]);
+const FEATURED_FOLDERS = new Set([
+  "crafterblue.com",
+  "foodpanda.hk",
+  "drinknixie.com",
+  "ihuiwa.com"
+]);
 
 const META = {
   "abeiai.com": { title: "Abei AI", client: "AI Platform", shortDesc: "AI product experience with intelligent workflows and modern interface delivery." },
@@ -119,7 +125,7 @@ const projects = folders.map((folder, index) => {
     location: folder.includes(".hk") ? "Hong Kong" : folder.includes(".cn") ? "China" : "Global",
     published: "2024",
     websiteUrl,
-    featured: index < 4
+    featured: FEATURED_FOLDERS.has(folder)
   };
 });
 
