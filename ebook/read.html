@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta name="robots" content="noindex, nofollow">
+    <title>IT Dor Services Guide | Ebook</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="shortcut icon" href="../image/logo/favicon.png" />
+    <style>
+        body {
+            margin: 0;
+            background: #142125;
+            color: #E1F2F2;
+            min-height: 100vh;
+        }
+        .ebook-reader-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 14px 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            background: rgba(25, 39, 43, 0.95);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .ebook-reader-bar a {
+            color: #43BAFF;
+            text-decoration: none;
+        }
+        .ebook-reader-frame {
+            width: 100%;
+            height: calc(100vh - 58px);
+            border: 0;
+            background: #fff;
+        }
+        .ebook-reader-lock {
+            max-width: 640px;
+            margin: 80px auto;
+            padding: 40px 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="ebook-reader-root"></div>
+    <script src="../js/site-config.js"></script>
+    <script>
+        (function () {
+            var config = (window.ITDOR_SITE && window.ITDOR_SITE.ebook) || {};
+            var unlocked = localStorage.getItem("itdor_ebook_unlocked") === "1";
+            var embedUrl = config.embedUrl || "https://ebook-platform-23.preview.emergentagent.com/";
+            var root = document.getElementById("ebook-reader-root");
+
+            if (!unlocked) {
+                root.innerHTML =
+                    '<div class="ebook-reader-lock">' +
+                    "<h1 class=\"fw-6 mb-20\">Access Required</h1>" +
+                    '<p class="lh-30 mb-30">Please request the free guide from our homepage to unlock this ebook.</p>' +
+                    '<a href="../index.html" class="tf-btn"><span>Back to Homepage</span></a>' +
+                    "</div>";
+                return;
+            }
+
+            root.innerHTML =
+                '<div class="ebook-reader-bar">' +
+                '<strong>IT Dor Services Guide</strong>' +
+                '<div><a href="../index.html">Back to site</a> · <a href="../contact.html">Contact us</a></div>' +
+                "</div>" +
+                '<iframe class="ebook-reader-frame" title="IT Dor Services ebook" src="' +
+                embedUrl +
+                '" allowfullscreen loading="lazy"></iframe>';
+        })();
+    </script>
+</body>
+</html>

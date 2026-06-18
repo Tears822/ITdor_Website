@@ -35,9 +35,23 @@ export default async function handler(req, res) {
 
   try {
     const body = typeof req.body === "string" ? JSON.parse(req.body) : req.body;
-    const { name, email, phone, message, subject } = body || {};
+    const { name, email, phone, message, subject, website, company_url, company } = body || {};
 
-    if (!name || !email || !message) {
+    if (website || company_url) {
+      return res.status(200).json({
+        success: true,
+        message: "Email sent successfully",
+      });
+    }
+
+    const isEbookLead = typeof subject === "string" && /ebook/i.test(subject);
+    const resolvedMessage =
+      message ||
+      (isEbookLead
+        ? `Ebook download request${company ? `\nCompany: ${company}` : ""}`
+        : "");
+
+    if (!name || !email || !resolvedMessage) {
       return res.status(400).json({ error: "Missing required fields" });
     }
 
@@ -49,8 +63,9 @@ export default async function handler(req, res) {
     const safeName = escapeHtml(name);
     const safeEmail = escapeHtml(email);
     const safePhone = phone ? escapeHtml(phone) : "";
+    const safeCompany = company ? escapeHtml(company) : "";
     const safeSubject = subject ? escapeHtml(subject) : "";
-    const safeMessage = escapeHtml(message);
+    const safeMessage = escapeHtml(resolvedMessage);
 
     const subjectLine = safeSubject
       ? `New Contact Form Submission: ${safeSubject} (${safeName})`
@@ -69,6 +84,7 @@ export default async function handler(req, res) {
             <p style="margin: 10px 0;"><strong>Name:</strong> ${safeName}</p>
             <p style="margin: 10px 0;"><strong>Email:</strong> <a href="mailto:${safeEmail}">${safeEmail}</a></p>
             ${safePhone ? `<p style="margin: 10px 0;"><strong>Phone:</strong> <a href="tel:${safePhone}">${safePhone}</a></p>` : ""}
+            ${safeCompany ? `<p style="margin: 10px 0;"><strong>Company:</strong> ${safeCompany}</p>` : ""}
             ${safeSubject ? `<p style="margin: 10px 0;"><strong>Subject:</strong> ${safeSubject}</p>` : ""}
           </div>
 
@@ -92,7 +108,7 @@ ${phone ? `Phone: ${phone}` : ""}
 ${subject ? `Subject: ${subject}` : ""}
 
 Message:
-${message}
+${resolvedMessage}
 
 ---
 This email was sent from the IT Dor Services contact form.

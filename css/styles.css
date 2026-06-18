@@ -1955,7 +1955,7 @@ iframe[title*="chat widget" i] {
   gap: 16px;
 }
 .software-industries-panel h5 {
-  color: var(--main-dark);
+  color: var(--white);
 }
 .software-industries-list {
   display: flex;
@@ -1971,6 +1971,60 @@ iframe[title*="chat widget" i] {
   background: rgba(255, 255, 255, 0.04);
   font-size: 14px;
   line-height: 1.2;
+}
+.cybersecurity-partner-banner .desc a,
+.section-services .heading-section a.text-underline {
+  color: var(--primary);
+}
+.cybersecurity-stats-row {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cybersecurity-stat-card {
+  height: 100%;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid var(--stroke-2);
+  background: rgba(255, 255, 255, 0.04);
+  text-align: center;
+}
+.cybersecurity-stat-card__label {
+  display: block;
+  font-size: clamp(1.125rem, 2vw, 1.375rem);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+.cybersecurity-stat-card__desc {
+  font-size: 15px;
+  color: rgba(225, 242, 242, 0.82);
+}
+.cybersecurity-value-card {
+  height: 100%;
+  padding: 28px;
+  border-radius: 12px;
+  border: 1px solid var(--stroke-2);
+  background: rgba(255, 255, 255, 0.03);
+}
+.cybersecurity-value-card h5 {
+  color: var(--white);
+}
+.cybersecurity-certified-panel {
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid var(--stroke-2);
+  background: rgba(255, 255, 255, 0.03);
+}
+.cybersecurity-certified-panel .software-industries-panel h5 {
+  color: var(--white);
+}
+.section-services .services-intro-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
 }
 .services-tab-content {
   min-height: 320px;
@@ -6538,6 +6592,20 @@ body.portfolio-mosaic-open {
   height: 100%;
   object-fit: cover;
 }
+.section-about.p-services .services-intro-video {
+  margin-top: 30px;
+  max-width: 520px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--stroke-2);
+  aspect-ratio: 16 / 9;
+}
+.section-about.p-services .services-intro-video video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .section-about.p-services .list-benefit {
   margin-bottom: 50px;
 }
@@ -6675,6 +6743,24 @@ body.portfolio-mosaic-open {
   padding-left: 30px;
   padding-top: 61px;
   padding-bottom: 61px;
+}
+.section-counting .heading-section .sub-title {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+.section-counting .heading-section .desc {
+  font-size: clamp(24px, 2.4vw, 32px);
+  line-height: 1.65;
+}
+@media (max-width: 767px) {
+  .section-counting .heading-section .sub-title {
+    font-size: 22px;
+  }
+  .section-counting .heading-section .desc {
+    font-size: 20px;
+    line-height: 1.6;
+  }
 }
 
 .section-company {
@@ -7915,6 +8001,197 @@ body.portfolio-mosaic-open {
   font-size: clamp(1.75rem, 3.5vw, 2.5rem);
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+
+/* Ebook lead gate modal */
+body.ebook-lead-modal-open {
+  overflow: hidden;
+}
+.ebook-lead-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+.ebook-lead-modal.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+.ebook-lead-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 18, 20, 0.82);
+  backdrop-filter: blur(4px);
+}
+.ebook-lead-modal__dialog {
+  position: relative;
+  width: min(980px, 100%);
+  max-height: calc(100vh - 40px);
+  overflow: auto;
+  border-radius: 18px;
+  border: 1px solid var(--stroke-2);
+  background: linear-gradient(145deg, #1b2d31 0%, #142125 100%);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+}
+.ebook-lead-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+.ebook-lead-modal__layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+}
+.ebook-lead-modal__cover {
+  position: relative;
+  min-height: 100%;
+}
+.ebook-lead-modal__cover img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+}
+.ebook-lead-modal__badge {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--primary);
+  color: var(--main-dark);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.ebook-lead-modal__content {
+  padding: 36px 32px 28px;
+}
+.ebook-lead-modal__eyebrow {
+  margin: 0 0 10px;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.ebook-lead-modal__title {
+  margin: 0 0 14px;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.2;
+  color: var(--white);
+}
+.ebook-lead-modal__subtitle {
+  margin: 0 0 18px;
+  color: rgba(225, 242, 242, 0.88);
+}
+.ebook-lead-modal__list {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+.ebook-lead-modal__bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: rgba(225, 242, 242, 0.92);
+  line-height: 1.5;
+}
+.ebook-lead-modal__bullet i {
+  color: var(--primary);
+  margin-top: 3px;
+}
+.ebook-lead-modal__fields {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.ebook-lead-modal__field span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white);
+}
+.ebook-lead-modal__field input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--stroke-2);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--white);
+}
+.ebook-lead-modal__field input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+.ebook-lead-modal__hp {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  pointer-events: none;
+}
+.ebook-lead-modal__note {
+  margin: 0 0 18px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(225, 242, 242, 0.72);
+}
+.ebook-lead-modal__submit {
+  width: 100%;
+  justify-content: center;
+}
+.ebook-lead-modal__status {
+  margin: 14px 0 0;
+  font-size: 14px;
+  color: #8de1a8;
+}
+.ebook-lead-modal__status.is-error {
+  color: #ff8f8f;
+}
+.ebook-lead-modal__skip {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  border: 0;
+  background: transparent;
+  color: rgba(225, 242, 242, 0.72);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.ebook-lead-modal__success {
+  text-align: center;
+  padding: 20px 0 10px;
+}
+@media (max-width: 991px) {
+  .ebook-lead-modal__layout {
+    grid-template-columns: 1fr;
+  }
+  .ebook-lead-modal__cover img {
+    min-height: 240px;
+  }
+  .ebook-lead-modal__content {
+    padding: 28px 22px 24px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
