@@ -1,5 +1,7 @@
 window.ITDOR_SITE = window.ITDOR_SITE || {};
 window.ITDOR_SITE.calendlyUrl = "https://calendly.com/itdorservices/30min";
+window.ITDOR_SITE.cyberGlobalCalendarUrl =
+  "https://meet.cybergl.com/meetings/jarrod-aldom";
 
 window.ITDOR_SITE.ebook = {
   enabled: true,
