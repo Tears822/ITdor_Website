@@ -6601,6 +6601,11 @@ body.portfolio-mosaic-open {
   height: 100%;
   object-fit: cover;
 }
+.section-about.p-services .services-intro-desc,
+.section-about.p-services .services-intro-desc p {
+  font-size: clamp(18px, 2.2vw, 24px);
+  line-height: 1.65;
+}
 .section-about.p-services .list-benefit {
   margin-bottom: 50px;
 }
