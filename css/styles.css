@@ -1985,26 +1985,31 @@ iframe[title*="chat widget" i] {
 .cybersecurity-partner-banner .title {
   font-size: clamp(1.75rem, 3.5vw, 2.5rem);
 }
+.cybersecurity-partner-banner .heading-section {
+  text-align: center;
+}
 .cybersecurity-stats-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch;
   gap: 30px;
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 8px;
-  --bs-gutter-x: 0;
 }
-.cybersecurity-stats-row > [class*="col-"] {
-  flex: 0 1 300px;
+.cybersecurity-stats-row .cybersecurity-stat-card {
+  flex: 1 1 280px;
   max-width: 320px;
-  width: 100%;
-  padding: 0;
+  min-width: 260px;
 }
 .cybersecurity-partner-banner .cybersecurity-partner-cta {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  gap: 12px 20px;
   margin-top: 56px;
   padding-top: 8px;
 }
@@ -2040,19 +2045,38 @@ iframe[title*="chat widget" i] {
   color: var(--white);
 }
 .cybersecurity-certified-panel {
-  padding: 40px;
+  padding: 48px;
   border-radius: 16px;
   border: 1px solid var(--stroke-2);
   background: rgba(255, 255, 255, 0.03);
 }
+.cybersecurity-partner-details .cybersecurity-certified-panel {
+  margin-top: 72px;
+}
+.cybersecurity-partner-details .cybersecurity-partner-details-cta {
+  margin-top: 56px;
+  padding-top: 8px;
+}
 .cybersecurity-certified-panel .software-industries-panel h5 {
   color: var(--white);
+  margin-bottom: 20px;
+}
+.cybersecurity-certified-panel .software-industries-list {
+  gap: 12px 14px;
 }
 .section-services .services-intro-cta {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 16px 20px;
   justify-content: center;
+  align-items: center;
+}
+.section-services .services-intro-cta .tf-btn.no-bg.text-underline,
+.cybersecurity-partner-cta .tf-btn.no-bg.text-underline {
+  padding: 20px 0;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.2;
 }
 .section-software-process {
   position: relative;
@@ -6881,6 +6905,13 @@ body.portfolio-mosaic-open {
 
 .section-company {
   position: relative;
+}
+.section-company .section-company-cta {
+  margin-top: 48px;
+  padding-top: 8px;
+}
+.section-company .wg-according .according-item:last-child {
+  margin-bottom: 4px;
 }
 .section-company .section-company-inner {
   display: -webkit-box;
