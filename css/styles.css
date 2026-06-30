@@ -1980,14 +1980,33 @@ iframe[title*="chat widget" i] {
   font-size: clamp(18px, 2.2vw, 24px);
   line-height: 1.65;
   color: rgba(225, 242, 242, 0.92);
+  text-align: center;
 }
 .cybersecurity-partner-banner .title {
   font-size: clamp(1.75rem, 3.5vw, 2.5rem);
 }
 .cybersecurity-stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 8px;
+  --bs-gutter-x: 0;
+}
+.cybersecurity-stats-row > [class*="col-"] {
+  flex: 0 1 300px;
+  max-width: 320px;
+  width: 100%;
+  padding: 0;
+}
+.cybersecurity-partner-banner .cybersecurity-partner-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+  padding-top: 8px;
 }
 .cybersecurity-stat-card {
   height: 100%;
