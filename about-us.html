@@ -90,7 +90,7 @@
                     <ul class="list-topbar-item flex align-items-center">
                         <li class="top-bar-item">
                             <i class="icon-location-dot"></i>
-                            <a href="https://itdorservices.com/contact" target="_blank" rel="noopener">Boston, MA, USA • Worldwide (Remote)</a>
+                            <a href="https://itdorservices.com/contact" target="_blank" rel="noopener">Boston, MA, USA • Global (Remote)</a>
                         </li>
                         <li class="top-bar-item">
                             <i class="icon-email"></i>
@@ -602,26 +602,13 @@
                                 </fieldset>
                             </div>
 
-                            <div class="nice-select mb-20">
-                                <span class="current caption-1">Choose Services</span>
-                                <ul class="list">
-                                    <li class="option option-all selected focus">
-                                        Choose Services
-                                    </li>
-                                    <li class="option">
-                                        Machine Learning
-                                    </li>
-                                    <li class="option">
-                                        Artificial Intelligence
-                                    </li>
-                                    <li class="option">
-                                        Augmented Reality
-                                    </li>
-                                    <li class="option">
-                                        IT Support & Networking
-                                    </li>
-                                </ul>
-                            </div>
+                            <select name="subject" class="select_js wide mb-20" required>
+                                <option value="" disabled selected>Choose Services</option>
+                                <option value="IT Infrastructure">IT Infrastructure</option>
+                                <option value="Cybersecurity">Cybersecurity</option>
+                                <option value="Software Development">Software Development</option>
+                                <option value="General Inquiry">General Inquiry</option>
+                            </select>
 
                             <fieldset class="mb-20">
                                 <textarea name="message" id="message" placeholder="Message" required></textarea>
@@ -633,48 +620,6 @@
                             </button>
 
                         </form>
-                    </div>
-                </div>
-            </section>
-
-            <section class="section-blog tf-spacing-2">
-                <div class="mask mask-s-blog-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" fill="none">
-                        <circle cx="350" cy="350" r="285" stroke="url(#a7)" stroke-width="130" />
-                        <defs>
-                            <linearGradient id="a7" x1="154" x2="497.875" y1="61.688" y2="589.75">
-                                <stop offset="0" stop-color="#fff" stop-opacity="0.05" />
-                                <stop offset="1" stop-color="#fff" stop-opacity="0" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
-                <div class="mask mask-s-blog-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" fill="none">
-                        <circle cx="400" cy="400" r="325" stroke="url(#b)" stroke-width="150" />
-                        <defs>
-                            <linearGradient id="b" x1="176" x2="569" y1="70.5" y2="674">
-                                <stop offset="0" stop-color="#fff" stop-opacity="0.05" />
-                                <stop offset="1" stop-color="#fff" stop-opacity="0" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
-                <div class="tf-container">
-                    <div class="heading-section mb-60 text-center">
-                        <div class="sub-title body-2 fw-7 mb-17 title-animation">
-                            Latest News & Blog
-                        </div>
-                        <h2 class="title fw-6 title-animation">
-                            Read Our Latest
-                            <span class="fw-3">News & Blog</span>
-                        </h2>
-                    </div>
-                </div>
-                <div class="tf-container">
-                    <div class="row rg-30" id="blog-home-teaser"></div>
-                    <div class="text-center blog-cta">
-                        <a href="blog-standard.html" class="tf-btn"><span>View All Posts</span><i class="icon-arrow-right"></i></a>
                     </div>
                 </div>
             </section>
@@ -797,7 +742,7 @@
                                 </div>
 
                                 <div class="desc lh-30">
-                                    We understand that every challenge is an opportunity we are here seize a team of dedicated professionals and a culture
+                                    Join our quarterly newsletter to learn and keep current of market trends, products, and services.
                                 </div>
 
                             </form>
@@ -908,19 +853,10 @@
                                 <i class="icon-angle-down"></i>
                             </div>
                             <div class="tf-collapse-content" style="display: unset;">
-                                <p class="body-2 fw-5 mb-10">IT Services</p>
-                                <ul class="mb-20">
-                                    <li class="support-item-footer"><a href="services/network-connectivity.html">Network & Connectivity</a></li>
-                                    <li class="support-item-footer"><a href="services/emergency-onsite.html">Emergency Onsite Dispatch</a></li>
-                                    <li class="support-item-footer"><a href="services/cat5-cat6-cabling.html">Cat5/Cat6 Cabling</a></li>
-                                    <li class="support-item-footer"><a href="services/desktop-support.html">Desktop & Server Support</a></li>
-                                    <li class="support-item-footer"><a href="services/voip-support.html">VOIP & Phone Support</a></li>
-                                </ul>
-                                <p class="body-2 fw-5 mb-10">Software Development</p>
-                                <ul>
-                                    <li class="support-item-footer"><a href="services/software-development.html">Software Development</a></li>
-                                    <li class="support-item-footer"><a href="services/application-support.html">Application Support</a></li>
-                                    <li class="support-item-footer"><a href="services/cloud-devops.html">Cloud & DevOps</a></li>
+                                                                <ul>
+                                    <li class="support-item-footer"><a href="services.html?tab=it#it-services-intro">IT Infrastructure</a></li>
+                                    <li class="support-item-footer"><a href="services.html?tab=cybersecurity#cybersecurity-services-intro">Cybersecurity</a></li>
+                                    <li class="support-item-footer"><a href="services.html?tab=software#software-services-intro">Software Development</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -932,7 +868,7 @@
                                 </div>
                                 <div class="address body-2 lh-30">
                                     Boston, MA, USA
-                                     • Worldwide (Remote)
+                                     • Global (Remote)
                                 </div>
                             </div>
                             <div class="contact-footer item">
@@ -1008,7 +944,7 @@
                     <div class="contact-mobile">
                         <h5 class="title-contact-mobile">Contact Info</h5>
                         <ul class="mb-20">
-                            <li class="content-contact-moblile"><i class="icon-location-dot"></i> <a href="#" class="text-medium">Boston, MA, USA • Worldwide (Remote)</a>
+                            <li class="content-contact-moblile"><i class="icon-location-dot"></i> <a href="#" class="text-medium">Boston, MA, USA • Global (Remote)</a>
                             </li>
                             <li class="content-contact-moblile">
                                 <i class="icon-email"></i><a href="mailto:sales@itdorservices.com" class="text-medium">sales@itdorservices.com</a>
@@ -1050,7 +986,7 @@
                     <li>
                         <p class="lh-30">Address:
                             <a href="contact.html" target="_blank" rel="noopener">
-                                Boston, MA, USA • Worldwide (Remote)
+                                Boston, MA, USA • Global (Remote)
                             </a>
                         </p>
                     </li>
@@ -1111,7 +1047,9 @@
     <script src="js/carousel.js"></script>
     <script src="js/odometer.min.js"></script>
     <script src="js/jquery-validate.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>        <script src="js/site-config.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/contact-form-select.js"></script>
+    <script src="js/site-config.js"></script>
     <script src="js/ebook-lead-gate.js"></script>
     <script src="js/book-meeting.js"></script>
 

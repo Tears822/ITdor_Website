@@ -2725,6 +2725,56 @@ fieldset {
 .form-contact-us input::placeholder {
   color: var(--main-dark);
 }
+.form-contact-us:not(.style-bg-dark-2):not(.sidebar-form) .nice-select {
+  background-color: var(--white) !important;
+  border: 1px solid rgba(25, 39, 43, 0.12) !important;
+  border-radius: 12px !important;
+  padding: 12px 21px !important;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 20px;
+  min-height: 56px;
+}
+.form-contact-us:not(.style-bg-dark-2):not(.sidebar-form) .nice-select > span.current {
+  color: var(--main-dark);
+}
+.form-contact-us:not(.style-bg-dark-2):not(.sidebar-form) .nice-select > span.current:empty,
+.form-contact-us:not(.style-bg-dark-2):not(.sidebar-form) .nice-select .option.disabled {
+  color: var(--main-dark);
+  opacity: 0.75;
+}
+.form-contact-us:not(.style-bg-dark-2):not(.sidebar-form) .nice-select .list .option.disabled {
+  display: none;
+}
+.form-contact-us:not(.style-bg-dark-2):not(.sidebar-form) .nice-select.open {
+  z-index: 120;
+}
+.form-contact-us:not(.style-bg-dark-2):not(.sidebar-form) .nice-select .option {
+  color: var(--main-dark);
+}
+.form-contact-us:not(.style-bg-dark-2):not(.sidebar-form) .nice-select .list {
+  background-color: #f7fbfb;
+  border: 1px solid rgba(25, 39, 43, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(25, 39, 43, 0.08);
+  top: 100%;
+  bottom: auto;
+  z-index: 121;
+}
+.form-contact-us:not(.style-bg-dark-2):not(.sidebar-form) .nice-select.open .list {
+  opacity: 1;
+  pointer-events: auto;
+}
+.section-form .section-inner,
+.section-form .right,
+.section-form .form-contact-us {
+  overflow: visible;
+}
+.form-contact-us:not(.style-bg-dark-2):not(.sidebar-form) .nice-select .option:hover,
+.form-contact-us:not(.style-bg-dark-2):not(.sidebar-form) .nice-select .option.focus,
+.form-contact-us:not(.style-bg-dark-2):not(.sidebar-form) .nice-select .option.selected.focus {
+  background-color: rgba(67, 186, 255, 0.18);
+}
 .form-contact-us.sidebar-form {
   background-color: transparent;
   padding: 0;
@@ -2837,10 +2887,10 @@ fieldset {
   -webkit-text-fill-color: var(--white) !important;
 }
 .form-contact-us.style-bg-dark-2 .nice-select {
-  background-color: var(--main-dark);
+  background-color: var(--surface);
   padding: 15px 25px 15px 25px !important;
   border-radius: 12px !important;
-  border: 1px solid var(--stroke-2) !important;
+  border: 1px solid rgba(25, 39, 43, 0.12) !important;
   position: relative;
   z-index: 1;
 }
@@ -2854,9 +2904,9 @@ fieldset {
   overflow: visible;
   margin-top: 0;
   border-radius: 12px;
-  border: 1px solid var(--stroke-2);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
-  background-color: var(--main-dark);
+  border: 1px solid rgba(25, 39, 43, 0.1);
+  box-shadow: 0 10px 30px rgba(25, 39, 43, 0.12);
+  background-color: #f7fbfb;
   transform: scale(1) translateY(0);
 }
 .form-contact-us.style-bg-dark-2 .nice-select.open .list {
@@ -2867,18 +2917,21 @@ fieldset {
   transform-origin: 50% 0;
 }
 .form-contact-us.style-bg-dark-2 .nice-select .option {
-  color: var(--white);
+  color: var(--main-dark);
+}
+.form-contact-us.style-bg-dark-2 .nice-select .list .option.disabled {
+  display: none;
 }
 .form-contact-us.style-bg-dark-2 .nice-select .option:hover,
 .form-contact-us.style-bg-dark-2 .nice-select .option.focus,
 .form-contact-us.style-bg-dark-2 .nice-select .option.selected.focus {
-  background-color: var(--dark-2);
+  background-color: rgba(67, 186, 255, 0.18);
 }
 .form-contact-us.style-bg-dark-2 .nice-select span {
-  color: var(--white);
+  color: var(--main-dark);
 }
 .form-contact-us.style-bg-dark-2 .nice-select::before {
-  color: var(--white);
+  color: var(--main-dark);
 }
 .form-contact-us.style-bg-dark-2 input {
   background-color: var(--main-dark) !important;
@@ -4474,6 +4527,13 @@ a.mapboxgl-ctrl-logo {
   font-size: 65px;
   line-height: 100%;
 }
+.counter-item .number-counter.flex {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  gap: 4px;
+}
 .counter-item .number-counter span {
   font-family: "Inter", sans-serif !important;
   line-height: 100% !important;
@@ -4484,8 +4544,17 @@ a.mapboxgl-ctrl-logo {
 .counter-item .odometer-formatting-mark {
   display: none !important;
 }
-.counter-item .odometer-value {
-  width: 100%;
+.counter-item .number-counter .odometer {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.counter-item .number-counter .odometer-inside {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.counter-item .odometer-digit .odometer-value {
+  width: auto;
 }
 .counter-item.style-2 {
   padding: 40px 45px 31px;

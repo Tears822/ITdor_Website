@@ -35,7 +35,6 @@
     var externalAttrs = isCybersecurity
       ? ' target="_blank" rel="noopener"'
       : "";
-    var ctaText = isCybersecurity ? "Learn More" : "Read More";
 
     var iconHtml = window.renderServiceIcon
       ? window.renderServiceIcon(service)
@@ -54,15 +53,7 @@
       '<div class="desc lh-30">' +
       escapeHtml(service.description) +
       "</div>" +
-      '<div class="bottom-item">' +
-      '<a href="' +
-      href +
-      '"' +
-      externalAttrs +
-      ' class="tf-btn-readmore"><span class="plus">+</span><span class="text">' +
-      ctaText +
-      "</span></a>" +
-      "</div></div>"
+      "</div>"
     );
   }
 
