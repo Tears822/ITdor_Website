@@ -26,12 +26,10 @@
 
   function renderCard(service) {
     var isCybersecurity = service.group === "cybersecurity";
-    var calendarUrl =
-      (window.ITDOR_SITE && window.ITDOR_SITE.cyberGlobalCalendarUrl) ||
-      "https://meet.cybergl.com/meetings/jarrod-aldom";
     var href = isCybersecurity
-      ? calendarUrl
-      : "services/" + service.slug + ".html";
+      ? (window.ITDOR_SITE && window.ITDOR_SITE.cyberGlobalCalendarUrl) ||
+        "https://meet.cybergl.com/meetings/jarrod-aldom"
+      : "contact.html";
     var externalAttrs = isCybersecurity
       ? ' target="_blank" rel="noopener"'
       : "";
