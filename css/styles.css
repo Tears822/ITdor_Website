@@ -2004,14 +2004,17 @@ iframe[title*="chat widget" i] {
   max-width: 320px;
   min-width: 260px;
 }
-.cybersecurity-partner-banner .cybersecurity-partner-cta {
+.section-about.p-services .cybersecurity-partner-banner .cybersecurity-partner-cta,
+.section-services .cybersecurity-partner-cta {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 12px 20px;
   margin-top: 56px;
   padding-top: 8px;
+  width: 100%;
 }
 .cybersecurity-stat-card {
   height: 100%;
