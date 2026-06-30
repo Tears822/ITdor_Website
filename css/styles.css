@@ -2054,6 +2054,34 @@ iframe[title*="chat widget" i] {
   gap: 16px;
   justify-content: center;
 }
+.section-software-process {
+  position: relative;
+  overflow-x: clip;
+}
+.section-software-process .software-process-intro {
+  max-width: 760px;
+}
+.section-software-process .software-process-steps {
+  max-width: 1140px;
+  margin: 0 auto;
+  gap: 24px;
+}
+.section-software-process .process-item .top-item .body-2 {
+  color: var(--white);
+}
+@media (max-width: 991px) {
+  .section-software-process .software-process-steps {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .section-software-process .process-item,
+  .section-software-process .process-item .text {
+    max-width: 100%;
+  }
+  .section-software-process .list-process .process-item .line {
+    max-width: 100%;
+  }
+}
 .services-tab-content {
   min-height: 320px;
 }
